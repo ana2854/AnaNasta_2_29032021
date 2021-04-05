@@ -3,6 +3,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#bloc_page {
+    width: 900px;
+    margin: auto;
+}
+
+
 nav ul
 {
     list-style-type: none;
@@ -17,5 +23,24 @@ nav li
 }
 
 .Hebergements, footer{
-    background-color: #e6e1e1;
+    background-color: #f3eaea;
+    border-radius: 5px;
 }
+
+footer 
+{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.apropros {
+    margin: 15px 30px 30px 30px;
+}
+
+.noshergements, .assistance
+{
+    
+    margin: 30 px;
+}
+

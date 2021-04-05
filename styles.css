@@ -1,3 +1,16 @@
 h1 {
-    color: red;
+    color: black;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav li 
+{
+    margin: 30px;
 }

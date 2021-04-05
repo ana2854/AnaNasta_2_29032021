@@ -1,5 +1,6 @@
-h1 {
-    color: black;
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav ul
@@ -13,4 +14,8 @@ nav ul
 nav li 
 {
     margin: 30px;
+}
+
+.Hebergements, footer{
+    background-color: #e6e1e1;
 }

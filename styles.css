@@ -35,25 +35,38 @@ input {
 }
 
 
-.Hebergements, footer{
+.Hebergements {
     background-color: #f2f2f2;
     border-radius: 5px;
 }
 
-footer 
-{
+footer {
+    background-color: #f2f2f2;
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-around;
 }
 
-.apropros {
-    margin: 15px 30px 30px 30px;
+
+.apropos {
+    margin-left: 0px;
 }
 
-.noshergements, .assistance
-{
-    
-    margin: 30 px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

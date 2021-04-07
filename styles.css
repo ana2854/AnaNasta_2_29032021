@@ -1,10 +1,20 @@
+
+#logo {
+    width:80px;
+    height: 50px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+
+
 body {
 
     font-family: 'Raleway', sans-serif;
 }
 
 #bloc_page {
-    width: 900px;
+    width: 1000px;
     margin: auto;
 }
 
@@ -15,6 +25,7 @@ nav ul
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    
 }
 
 nav li 
@@ -22,12 +33,15 @@ nav li
     margin: 30px;
 }
 
+
+
 .rechercher {
 
     background-color:#0065FC;
     color: white;
     border-radius: 0 8px 8px 0;
     padding: 7px;
+    margin: 5px 0 15px 0;
 }
 
 input {
@@ -41,10 +55,13 @@ input {
 }
 
 
+
+
 .HebergementsMarseille, .populaires {
     background-color: #f2f2f2;
     border-radius: 12px;
     padding: 5px;
+    margin: 20px;
 }
 
 footer {
@@ -63,10 +80,11 @@ footer {
     font-size: small;
     width: 17px;
     height: 17px;
-    padding: 7px;
+    padding: 10px;
     border-radius: 17px;
     background-color: #DEEBFF ;
     color: #0065FC;
+
 }
 
 .fa-map-marker-alt {
@@ -81,20 +99,37 @@ footer {
 }
 
 #economique, #familial, #romantique, #animaux {
-    margin: 10px;
+    margin: 20px;
     padding: 8px;
     border : solid 2px #D3D0D2;
     border-radius: 18px;
     font-weight: bold;
+    
 
 }
 
+.ContainerHebergements, .ContainerLesPlusPopulaires {
+    display: flex;
+    flex-direction: row;
+}
 
+.ContainerHebergements {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
+.ContainerActivites {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
-
-
-
+.ContainerLesPlusPopulaires {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
 
 

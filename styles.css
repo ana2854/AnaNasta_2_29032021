@@ -41,9 +41,9 @@ input {
 }
 
 
-.Hebergements {
+.HebergementsMarseille, .populaires {
     background-color: #f2f2f2;
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 5px;
 }
 
@@ -76,11 +76,8 @@ footer {
     border-radius: 8px 0 0 8px;
 }
 
-.fa-info-circle {
-    padding: 1px;
-    color: white;
-    border-radius: 10px;
-    background-color: #0065FC;
+.fa-info{
+    color:#0065FC;
 }
 
 #economique, #familial, #romantique, #animaux {

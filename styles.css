@@ -30,8 +30,18 @@ nav ul
 
 nav li 
 {
-    margin: 30px;
+    margin-left: 10px;
 }
+
+#Hautpage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+
 
 .fa-map-marker-alt {
     font-size: small;

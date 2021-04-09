@@ -80,10 +80,13 @@ footer {
     font-size: small;
     width: 17px;
     height: 17px;
-    padding: 10px;
+    padding: 11px;
     border-radius: 17px;
     background-color: #DEEBFF ;
     color: #0065FC;
+    position:absolute;
+    left: 0px;
+    bottom: 1px;
 
 }
 
@@ -98,17 +101,27 @@ footer {
     color:#0065FC;
 }
 
-#economique, #familial, #romantique, #animaux {
+#flexeco, #flexfam, #flexrom, #flexanim {
     margin: 20px;
-    padding: 8px;
+    padding: 8px 30px 8px 30px;
     border : solid 2px #D3D0D2;
     border-radius: 18px;
     font-weight: normal;
+    position: relative;
 }
 
-#economique:hover, #familial:hover, #romantique:hover, #animaux:hover {
+#flexeco:hover, #flexfam:hover, #flexrom:hover, #flexanim:hover {
     border: 3px solid #0065FC;
     font-weight: bold;
+}
+
+.economique, .romantique, .animaux, .familial {
+    position: relative;
+    left:15px;
+}
+
+.info {
+    margin: 20px;
 }
 
 

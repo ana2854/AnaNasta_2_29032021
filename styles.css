@@ -1,51 +1,55 @@
 
 #logo {
-    width:80px;
-    height: 50px;
+    width:100px;
+    height: 60px;
     padding: 5px;
     margin-bottom: 5px;
+    border:10px solid maroon;
 }
 
-body {
-
+html {
+    margin: 1%;
     font-family: 'Raleway', sans-serif;
-}
-
-#bloc_page {
-    margin: auto;
-}
-
-
-nav ul
-{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    
-}
-
-nav li 
-{
-    margin: 20px;
+    font-size: 20px;
 }
 
 #Hautpage {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    border: 10px solid maroon;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row; 
+}
+
+nav li {
+   margin: 70px;
+}
+
+.filtres {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    width: 1600px;
+    border:10px solid yellow;
 }
 
 
 .fa-map-marker-alt {
-    font-size: small;
     background-color: #f2f2f2;
-    padding: 16px;
+    padding: 8px;
     border-radius: 8px 0 0 8px;
 }
 
 input {
-    padding: 14px;
+    padding: 8px;
     border:1px solid #f2f2f2;
 }
 
@@ -60,24 +64,18 @@ input {
     border:1px solid #0065FC;
     color: white;
     border-radius: 0 8px 8px 0;
-    padding: 14px;
+    padding: 8px;
 }
 
 .ChampsRecherche {
-   padding: 20px;
+   padding: 8px;
 }
 
 
 
-
-.HebergementsMarseille, .populaires {
-    background-color: #f2f2f2;
-    border-radius: 12px;
-    padding: 5px;
-    margin: 20px;
-}
 
 footer {
+    border: 5px solid red;
     background-color: #f2f2f2;
     display: flex;
     flex-direction: row;
@@ -86,8 +84,9 @@ footer {
 
 
 
+
+
 .fa-money-bill-wave, .fa-male, .fa-heart, .fa-dog {
-    font-size: small;
     width: 16px;
     height: 17px;
     padding: 11px;
@@ -104,7 +103,7 @@ footer {
 
 
 .fa-info{
-    font-size: small;
+
     color:#0065FC;
     border:1px solid #DEEBFF;
     padding: 7px;
@@ -145,27 +144,60 @@ footer {
     align-content: center;
 }
 
-.Hebergements {
-    flex-grow: 2;
-    width: 800px;
+
+.HebergementsMarseille, .Populaires {
+    border: 20px solid black;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 20px;
 }
 
-.itemH {
+
+.Hebergements {
+    border: 20px solid blue;
+    padding: 40px;
+    width:1500px;
+    height: 850px;
+    flex-grow: 2;
+}
+
+.BoxHebergements {
+    border: 20px solid rgb(0, 247, 255);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    width:1400px;
+    height: 750px;
+
+}
+
+.auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
+    overflow: hidden;
+    border: 8px solid green;
+    border-radius: 15px;
+    width: 340px;
+    height: 230px;
 }
 
 .LesPlusPopulaires {
-    flex-grow: 0;
-    width:800px;
+    flex-grow: 1;
+    width:700px;
+    border: 10px solid rgb(216, 17, 50);
 }
 
-itemP {
+.TitrePopulaire{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.BoxPopulaires {
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
+    border: 10px solid pink;
 }
 
 .ActivitesMarseille {
@@ -177,4 +209,10 @@ itemP {
     flex-direction: column;
     align-content: space-around;
     height: 400px;
+}
+
+
+
+.hotel-le-soleil-du-matin, .au-coeur, .hotel-tout-bleu-et-blanc {
+    border: 8px solid rgb(241, 86, 112);
 }

@@ -3,6 +3,7 @@ html {
     margin: 1%;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
+    background-color: grey;
 }
 
 #logo {
@@ -163,7 +164,7 @@ input {
     border: 20px solid black;
     background-color: #f2f2f2;
     border-radius: 15px;
-    padding: 5px;
+    padding: 10px;
     margin: 20px;
 }
 
@@ -188,7 +189,6 @@ input {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    width:1400px;
     height: 750px;
 
 }
@@ -197,11 +197,11 @@ input {
 
 .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
     overflow: hidden;
-    border: 8px solid green;
+    border: 1px solid green;
     border-radius: 15px;
-    width: 340px;
-    height: 230px;
+  
 }
+
 
 
 .titreP{
@@ -225,19 +225,36 @@ input {
 }
 
 .ActivitesMarseille {
-    display: flex;
     flex-wrap: wrap;
-    border: 10px solid rgb(238, 223, 19);
+    border: 10px solid rgb(238, 19, 19);
 }
 
 .activites {
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
-    align-content: space-around;
-    height: 400px;
+    justify-content:space-evenly;
+   
 }
 
+.vieux-port, .fort-de-promegues, .iles-du-frioul, .parc-national-des-calanques, .notre-dame-de-la-garde, .parc-longchamps {
+    border-radius: 40px;
+    border: 5px solid rgb(248, 244, 16);
+}
+
+.colonne1A, colonne2A {
+    border: 2px solid rgb(248, 248, 46);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img.activites{
+    border-radius: 40px 40px 0 0;
+}
+
+img.hebergements {
+    border-radius:40px 40px 0 0;
+}
 
 
 

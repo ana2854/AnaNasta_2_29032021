@@ -12,6 +12,7 @@ html {
     margin-bottom: 5px;
     border:10px solid maroon;
 }
+
 .lienH a{
    text-decoration: none;
 }
@@ -28,6 +29,12 @@ html {
 
 .lienI {
     color: #0065FC;
+    font-weight: bold;
+}
+
+.hebergements a {
+    text-decoration: none;
+    color:black;
     font-weight: bold;
 }
 
@@ -128,7 +135,7 @@ input {
 
 #flexeco:hover, #flexfam:hover, #flexrom:hover, #flexanim:hover {
     border: 5px solid rgb(177, 175, 175);
-    color: rgb(73, 70, 70);
+    color: rgb(51, 51, 51);
     font-weight: bold;
 }
 
@@ -141,6 +148,8 @@ input {
     margin: 20px;
    
 }
+
+
 
 .BoxHP {
     display: flex;
@@ -195,7 +204,6 @@ input {
 }
 
 
-
 .titreP{
     display: flex;
     flex-direction: row;
@@ -211,18 +219,21 @@ input {
 
 .hotel-le-soleil-du-matin, .au-coeur, .hotel-tout-bleu-et-blanc {
     border: 8px solid rgb(241, 86, 112);
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
 }
 
 .ActivitesMarseille {
     display: flex;
     flex-wrap: wrap;
-    height: 500px;
-    border: 12px solid rgb(238, 223, 19);
+    border: 10px solid rgb(238, 223, 19);
 }
 
 .activites {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: stretch;
     align-content: space-around;
     height: 400px;
 }

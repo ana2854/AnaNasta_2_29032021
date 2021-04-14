@@ -9,6 +9,9 @@ html {
 @media screen and (max-width: 768px) {
     html {
       flex-direction: column;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+      font-size: 20px;
     }
   }
 
@@ -68,11 +71,19 @@ nav li {
 .filtres {
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
     width: 1500px;
     border:10px solid yellow;
 }
+
+@media screen and (max-width: 768px) {
+    .filtres {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
 
 
 .fa-map-marker-alt {
@@ -165,6 +176,12 @@ input {
     align-content: center;
 }
 
+@media screen and (max-width: 768px) {
+    .BoxHP {
+      flex-direction: column;
+    }
+  }
+
 
 .HebergementsMarseille, .LesPlusPopulaires {
     border-radius: 20px;
@@ -179,6 +196,12 @@ input {
     flex: 40%;
     background-color: #f2f2f2;
 }
+
+@media screen and (max-width: 768px) {
+    .LesPlusPopulaires {
+      order: 2;
+    }
+  }
 
 .LesPlusPopulaires {
     border: 10px solid rgb(216, 17, 50);
@@ -204,6 +227,12 @@ input {
     overflow: auto;
 
 }
+
+@media screen and (max-width: 768px) {
+    .hebergements {
+      flex-direction: column;
+    }
+  }
 
 
 .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
@@ -231,6 +260,12 @@ input {
     border: 10px solid rgb(134, 26, 44);
 }
 
+@media screen and (max-width: 768px) {
+    .populaires {
+      flex-direction: column;
+    }
+  }
+
 .hotel-le-soleil-du-matin, .au-coeur, .hotel-tout-bleu-et-blanc {
     background-color: white;
     border: 8px solid rgb(241, 86, 112);
@@ -250,8 +285,13 @@ input {
     flex-direction: row;
     justify-content: space-around;
     margin:50px;
-   
 }
+
+@media screen and (max-width: 768px) {
+    .activites {
+      flex-direction: column;
+    }
+  }
 
 .vieux-port, .fort-de-promegues, .iles-du-frioul, .parc-national-des-calanques, .notre-dame-de-la-garde, .parc-longchamps {
     border-radius: 40px;
@@ -288,4 +328,10 @@ footer {
     flex-direction: row;
     justify-content: space-around;
 }
+
+@media screen and (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+    }
+  }
 

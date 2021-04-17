@@ -1,17 +1,37 @@
-
-body {
-    margin: 2%;
-    font-family: 'Raleway', sans-serif;
-    font-size: 40px;
+* {
+    box-sizing: border-box;
 }
 
+
+body {
+    margin: 1%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 33px;
+}
+
+.Hautpage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 #logo {
-    width:290px;
-    height: 200px;
+    width:200px;
+    height: 150px;
     padding: 5px;
     margin-bottom: 5px;
 }
 
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row; 
+    border: 2px solid maroon;
+}
 
 
 .lienH a{
@@ -25,15 +45,10 @@ body {
 }
 
 
-
-
 .lienA a {
     text-decoration: none;
     color: black;
 }
-
-
-
 
 .lienI {
     color: #0065FC;
@@ -42,52 +57,15 @@ body {
 
 
 
-.hebergements a {
-    text-decoration: none;
-    color:black;
-    font-weight: bold;
-}
-
-
-
-
-.Hautpage {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-
-
-nav ul
-{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row; 
-}
-
-
-
-
 nav li {
-   margin-right: 90px;
+   margin: 90px;
 }
 
 
 
 
-.filtres {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    width: 2250px;
-    margin: 60px;
-}
+
+
 
 
 
@@ -123,8 +101,19 @@ input {
 }
 
 .ChampsRecherche, input, .rechercher{
-    font-size: 40px;
+    font-size: 33px;
 }
+
+
+.filtres {
+    font-size: 35px;
+    margin: 90px;
+}
+
+.filtres h3 {
+    display: inline-block;
+}
+
 
 .fa-money-bill-wave,.fa-heart, .fa-male, .fa-dog {
     padding: 20px 17px 20px 17px;
@@ -254,6 +243,14 @@ input {
 }
 
 
+.hebergements a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+
+
 
 
 .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
@@ -263,7 +260,7 @@ input {
     border-radius: 40px;
     align-content: space-around;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin:60px;
+    margin:70px;
   
 }
 
@@ -272,6 +269,10 @@ input {
     height: 375px;
     width: 635px;
     object-fit: cover;
+}
+
+.afficherplus {
+    margin-top: 100px;
 }
 
 
@@ -298,7 +299,6 @@ input {
     flex-direction:column;
     flex-wrap: wrap;
     overflow: hidden;
-    height: 1600px;
     justify-content: space-between;
     align-content: flex-start;
 
@@ -308,11 +308,12 @@ input {
 
 .hotel-le-soleil-du-matin, .au-coeur, .hotel-tout-bleu-et-blanc {
     background-color: white;
+    border: 10px solid white;
     display: flex;
     flex-direction: row;
     border-radius: 40px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin:40px;
+    margin:50px;
 }
 
 .populaires img {
@@ -324,26 +325,12 @@ input {
     object-fit: cover;
 }
 
-.ActivitesMarseille {
-    overflow: hidden;
-    margin: 70px 0 70px 0;
-
-}
-
-
-.titreA {
-    margin-bottom: 100px;
-}
-
-.activites h4 {
-    margin-left: 40px;
-}
 
 .activites {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content:space-between;
     margin:50px;
 
 }
@@ -352,12 +339,16 @@ input {
 
 .colonneA1, .colonneA2{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    height: 1200px;
 
 }
 
+.activites img {
+    border-radius:40px 40px 0 0;
+    object-fit: cover;
+}
 
 .vieux-port, .fort-de-promegues, .iles-du-frioul, .parc-national-des-calanques, .notre-dame-de-la-garde, .parc-longchamps {
     border-radius: 40px;
@@ -370,10 +361,7 @@ input {
 }
 
 
-.activites img {
-    border-radius:40px 40px 0 0;
-    object-fit: cover;
-}
+
 
 .notre-dame-de-la-garde img, .parc-longchamps img {
     height: 400px;
@@ -410,57 +398,291 @@ footer {
 }
 
 
-
-@media screen and (max-width: 667px) {
-        body {
-        display:flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        flex: 100%;
-        max-width: 100%;
-        }
-      }
+/*Contenu pour un écran de 667px de largeur comme un  iphone8*/
+   
 
 
 
-
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 1024px) {
 
             body {
-                flex:100%;
+                width:100%;
+                box-sizing: border-box;
+                font-size: 25px;
+                flex-wrap: wrap;
+                margin: 25px;
+                
+                background-color: springgreen;
+                border: 15px rgb(19, 18, 3);
             }
 
+            #logo {
+                height:100px;
+                width: 100px;
+            }
 
-            footer{
+            .Hautpage {
+                box-sizing: border-box;
+                border: 5px solid maroon;
+                width: 100%;
+                color: mediumorchid;
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            nav li {
+                margin: 30px;
+             }
+             
+
+            .lienH a:hover {
+                border-bottom: 5px solid #0065FC;
+                padding: 0 20px 10px 20px;
+                color: beige;
+            }
+          
+            .ChampsRecherche, input, .rechercher{
+                font-size: 20px;
+                text-align: center;
+                
+            }
+            .ChampsRecherche{
+                 margin: 15px;
+            }
+    
+            .filtres>h3 {
+                display: block;
+                flex-basis: 100%;
+
+                color: red;
+            }
+
+            .filtres {
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
-                flex: 100%;
-                max-width: 100%;
-                color: rgb(193, 54, 228);
-                }
+                width: 100%;
+                margin: 10px;
+                text-align: center;
+
+                border:4px solid green;
+            }
 
 
-                .BoxHP {
+
+            #eco, #rom, #anim, #fam, .economique,.romantique,.animaux,.familial{
+                margin: 10px;
+                padding: 20px 15px 20px 15px;
+                font-size: 20px;
+            }
+
+           
+            .HebergementsMarseille, .LesPlusPopulaires,.ActivitesMarseille {
+                    
+                padding:7px;
+                margin:3px;
+                width: 100%;
+                height: auto;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+
+
+            }
+
+            .hebergements, .activites,.populaires {
+                padding: 7px;
+                margin-bottom: 10px;
+                width: 100%;
+
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+               
+                border: 5px solid greenyellow;
+                
+            }
+            
+
+            .BoxHP {
                     display: flex;
                     flex-direction: column;
-                    border: 5px solid green;
-                    flex: 100%;
-                }
-                .populaires{
-                    display: flex;
-                    flex-direction: column;
-                    border: 5px solid rgb(219, 24, 89);
-                    order:0;
-                    flex: 100%;
+                     width: 100%;
+                    height: auto;
+                    
+                    border: 5px solid rgb(247, 2, 2);
+                    }
+
+                                .LesPlusPopulaires {
+                                    text-align: center;
+                                    overflow: hidden;
+                                    order:0;
+                                    }
+
+                                    .responsiveP {
+                                        width: 100%;
+                                        height: 400px;
+                                    }
+
+                                    .hotel-le-soleil-du-matin, .au-coeur, .hotel-tout-bleu-et-blanc {
+                                        border: 9px solid white;
+                                       
+                                    }
+                                    
+
+
+                                    .activites h4 {
+                                        margin-left:none;
+                                    }
+
+                                .HebergementsMarseille {
+                                    overflow: hidden;
+                                    order:1;
+                                    background-color: white;
+
+                                    border:8px solid blue;
+                                    }
+
+                .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
+                   
+                    border: 9px solid rgb(0, 81, 255);
                 }
 
-                .hebergements {
-                    display: flex;
-                    flex-direction: column;
-                    border: 5px solid blue;
-                    order:1;
-                    flex: 100%;
+                .responsiveH {
+                    width:100%;
+                    height:150px;
+                    border:9px solid rgb(36, 250, 250);
+                    
+                }
+            
+                .titreH {
+                    text-align: center;
                 }
 
+
+
+                            .ActivitesMarseille {
+                            
+                            
+                                border: 5px solid yellow;
+                            }
+
+
+                            .notre-dame-de-la-garde img, .parc-longchamps img,  .iles-du-frioul img,.fort-de-promegues img,
+                            .vieux-port img, .parc-national-des-calanques img {
+
+                                margin: none;
+                                width: 100%;
+                                height: 500px;
+                            }
+
+
+                            
+              
+
+                footer{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    margin: none;
+                    padding: 25px;
+    
+    
+                    color: rgb(193, 54, 228);
+                    }
+    
+
+            }
+
+
+
+            @media screen and (max-width: 667px) {
+                body {
+                    font-size: 20px;
+                    background-color: hotpink;
+                }
+
+                #logo {
+                    height:50px;
+                    width: 50px;
+                }
+
+                nav li {
+                    width: 100%;
+                }
+
+                .ChampsRecherche{
+                    font-size: 20px;
+                    text-align: center;
+                    width: 100%;
+
+            }
+                .input {
+                    padding: 5px;
+                }
+
+                .fa-map-marker-alt {
+                    padding: 5px;
+                }
+
+                .rechercher {
+                    padding: 5px;
+                }
+
+                .ChampsRecherche {
+                    padding: 4px;
+                }
+
+            }
+
+/*
+                
+.fa-map-marker-alt {
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 14px 0 0 14px;
+}
+
+input {
+    padding: 25px;
+    border:2px solid #f2f2f2;
+}
+
+::placeholder {
+    font-weight: bold;
+    color: black;
+    opacity: 1;
+}
+
+.rechercher {
+    background-color:#0065FC;
+    border:1px solid #0065FC;
+    color: white;
+    border-radius: 0 14px 14px 0;
+    padding: 25px;
+}
+
+.ChampsRecherche {
+   padding: 8px;
+}
+
+.ChampsRecherche, input, .rechercher{
+    font-size: 33px;
+}
+
+*/
+
+
+
+
+        }
+            
+
+                
     

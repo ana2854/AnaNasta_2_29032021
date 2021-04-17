@@ -27,31 +27,27 @@
 
     <body>
 
-            <div class="Hautpage">
-
-                <header>
-                
-                    <!--Logo Reservia-->
-                    <img src="img/logo/Reservia@3x.png" alt="Logo Rerservia" id="logo"/>
             
-                </header>
+
+        <div class="Hautpage">
+                    <header>
+            
+                                            <!--Logo Reservia-->
+                                            <img src="img/logo/Reservia@3x.png" alt="Logo Rerservia" id="logo"/>
+                                    
+                    </header>
+        
+                    <nav class="liensnavigation">
+                                    <ul>
+                                            <!--Ancres pour aller directement dans la section Hébergements et Activités-->
+                                            <li><span class="lienH"><a href="#ancrehebergements">Hébergements</a></span></li>
+                                            <li><span class="lienA"><a href="#ancreactivites">Activités</a></span></li>
+                                            <li><span class="lienI">S'inscrire</span></li> 
+                                    </ul>
+                    </nav>
 
             
-                <nav class="liensnavigation">
-                    <ul>
-                        <!--Ancres pour aller directement dans la section Hébergements et Activités-->
-                        <li><span class="lienH"><a href="#ancrehebergements">Hébergements</a></span></li>
-
-                        <li><span class="lienA"><a href="#ancreactivites">Activités</a></span></li>
-
-                        <li><span class="lienI">S'inscrire</span></li> 
-
-                    </ul>
-
-                </nav>
-
-            </div>
-
+        </div>
 
             <section class="section-recherche">
 
@@ -63,7 +59,9 @@
 
                 
                         <!--icônes filtres avec effet au survol-->
-                        <div class="filtres"><h3>Filtres</h3>
+                        <div class="filtres">
+                            
+                                            <h3>Filtres</h3>
 
                             <span id="eco"><i class="fas fa-money-bill-wave"></i> <span class="economique">Economique</span> </span>
 
@@ -86,7 +84,7 @@
 
             <section class="HebergementsMarseille">
             <!--Section Hebergements qui comprends : un titre,les hebergements, la span "afficher plus"-->
-                        <h2 id="ancrehebergements"><div class="titreH">Hébergements à Marseille</div></h2>
+                        <h2 id="ancrehebergements"><span class="titreH">Hébergements à Marseille</span></h2>
 
 
                         <div class="hebergements">
@@ -95,7 +93,7 @@
                 
                             <div class="auberge-la-cannebiere">
 
-                                    <img src="img/hebergements/2_large/hotellacannebiere.jpg" alt="hotel la cannebière">
+                                    <img src="img/hebergements/2_large/hotellacannebiere.jpg" alt="hotel la cannebière" class="responsiveH">
 
                                     <a href="#"> <h4> Auberge La Cannebière </h4> </a> 
                                     
@@ -111,7 +109,7 @@
 
 
                             <div class="hotel-du-port">
-                                <img src="img/hebergements/2_large/hotelduport.jpg" alt="hotel du port" class="h">
+                                <img src="img/hebergements/2_large/hotelduport.jpg" alt="hotel du port" class="responsiveH">
                                 
                                     
                                   <a href="#"><h4>Hôtel du port</h4></a>
@@ -128,7 +126,7 @@
 
 
                             <div class="hotel-les-mouettes">
-                                <img src="img/hebergements/2_large/hotellesmouettes.jpg" alt="hotel les mouettes">
+                                <img src="img/hebergements/2_large/hotellesmouettes.jpg" alt="hotel les mouettes" class="responsiveH">
                                 <a href="#"><h4>Hôtel Les mouettes</h4></a>
                                     <p>Nuit à partir de 76€</p>
 
@@ -144,7 +142,7 @@
                
 
                             <div class="hotel-de-la-mer">
-                                <img src="img/hebergements/2_large/hoteldelamer.jpg" alt="hotel de la mer">
+                                <img src="img/hebergements/2_large/hoteldelamer.jpg" alt="hotel de la mer" class="responsiveH">
                                 <a href="#"><h4>Hôtel de la mer</h4></a> 
                                     <p>Nuit à partir de 46€</p>
 
@@ -157,7 +155,7 @@
 
 
                             <div class="auberge-le-panier">
-                                <img src="img/hebergements/2_large/aubergelepanier.jpg" alt="hotel le panier">
+                                <img src="img/hebergements/2_large/aubergelepanier.jpg" alt="hotel le panier" class="responsiveH">
                                 <a href="#"><h4>Auberge Le Panier</h4></a>
                                     <p>Nuit à partir de 23€</p>
 
@@ -170,7 +168,7 @@
 
 
                             <div class="hotel-chez-amina">
-                                <img src="img/hebergements/2_large/hotelamina.jpg" alt="hotel chez amina">
+                                <img src="img/hebergements/2_large/hotelamina.jpg" alt="hotel chez amina" class="responsiveH">
                                 <a href="#"><h4>Hôtel chez Amina</h4></a>
                                     <p>Nuit à partir de 96€</p>
 
@@ -184,7 +182,7 @@
                         
                     
                         </div>
-                                    <span><strong>Afficher plus</strong></span>
+                                    <span class="afficherplus"><strong>Afficher plus</strong></span>
 
             </section>
             <!--fin de la section HebergementsMarseille-->
@@ -194,8 +192,9 @@
             <section class="LesPlusPopulaires"> 
              <!--Section qui comprend les hebergements les plus populaires + titre de la section-->
                                 <div class="titreP">
-                                    <h2>Les plus populaires</h2>
-                                    <i class="fas fa-chart-line"></i>
+                                        <h2>Les plus populaires</h2>
+
+                                        <i class="fas fa-chart-line"></i>
                                 </div> 
                 
 
@@ -203,7 +202,7 @@
                         <!--section qui comprends l'ensemble des hebergements les plus populaires uniquement-->
 
                             <div class="hotel-le-soleil-du-matin">
-                                    <img src="img/hebergements/2_large/hotelsoleilmatin.jpg" alt="hôtel le soleil du matin">
+                                    <img src="img/hebergements/2_large/hotelsoleilmatin.jpg" alt="hôtel le soleil du matin" class="responsiveP">
                                     <div class="pop">
                                         <h4>Hôtel Le soleil du matin</h4>
                                         <p>Nuit à partir de 128€</p>
@@ -216,7 +215,7 @@
                             </div>
 
                             <div class="au-coeur">
-                                <img src="img/hebergements/2_large/chbaucoeur.jpg" alt="chambre d'hôtes au coeur de l'eau">
+                                <img src="img/hebergements/2_large/chbaucoeur.jpg" alt="chambre d'hôtes au coeur de l'eau" class="responsiveP">
                                     <div class="pop">
                                         <h4>Au coeur de l'eau Chambres d'hôtes</h4>
                                         <p>Nuit à partir de 71€</p>
@@ -229,7 +228,7 @@
                             </div>
 
                             <div class="hotel-tout-bleu-et-blanc">
-                                <img src="img/hebergements/2_large/hotelbleublanc.jpg" alt="hôtel tout bleu et blanc">
+                                <img src="img/hebergements/2_large/hotelbleublanc.jpg" alt="hôtel tout bleu et blanc" class="responsiveP">
                                     <div class="pop">
                                         <h4>Hôtel Tout bleu et Blanc</h4>
                                         <p>Nuit à partir de 68€</p>
@@ -249,13 +248,13 @@
 
             <section class="ActivitesMarseille">
                 <!--section qui comprends les acitivés à Marseilles + le titre de ladite section-->
-                                <h2 id="ancreactivites"><div class="titreA">Activités à Marseille</div></h2>
+                                <h2 id="ancreactivites">Activités à Marseille</h2>
                      
                         <div class="activites">
                             <!--section qui comprends l'ensemble des activités uniquement-->
                             
                                 <div class="vieux-port">
-                                   <img src="img/activites/2_large/vieuxport.jpg" alt="Vieux Port">
+                                   <img src="img/activites/2_large/vieuxport.jpg" alt="Vieux Port" class="responsiveA">
                                   <h4>Vieux Port</h4>
                                 </div>
 
@@ -264,13 +263,13 @@
                             <div class="colonneA1">
 
                                 <div class="fort-de-promegues">
-                                   <img src="img/activites/2_large/fort-pomegues.jpg" alt="Fort de Promègues">
+                                   <img src="img/activites/2_large/fort-pomegues.jpg" alt="Fort de Promègues" class="responsiveA">
                                    <h4>Fort de Promègues</h4>
                                 </div>
                             
                            
                                 <div class="iles-du-frioul">
-                                    <img src="img/activites/2_large/iles-du-frioul.jpg" alt="Iles du Frioul">
+                                    <img src="img/activites/2_large/iles-du-frioul.jpg" alt="Iles du Frioul" class="responsiveA">
                                     <h4>Iles du Frioul</h4>
                                 </div>
 
@@ -278,7 +277,7 @@
 
 
                                 <div class="parc-national-des-calanques">
-                                   <img src="img/activites/2_large/calanques.jpg" alt="Parc National des Calanques" width="360" height="600">
+                                   <img src="img/activites/2_large/calanques.jpg" alt="Parc National des Calanques" class="responsiveA">
                                    <h4>Parc National des Calanques</h4>
                                 </div>
 
@@ -286,14 +285,14 @@
                             <div class="colonneA2">
 
                                 <div class="notre-dame-de-la-garde">
-                                    <img src="img/activites/2_large/notre-dame-de-la-garde.jpg" alt="Notre-Dame-de-la-Garde" width="360" height="600">
+                                    <img src="img/activites/2_large/notre-dame-de-la-garde.jpg" alt="Notre-Dame-de-la-Garde" class="responsiveA">
                                     <h4>Notre-Dame-de-la-Garde</h4>
                                 </div>
 
                             
 
                                 <div class="parc-longchamps">
-                                   <img src="img/activites/2_large/parclongchamp.jpg" alt="Parc Longchamp" width="360" height="600"> <h4>Parc Longchamp</h4>
+                                   <img src="img/activites/2_large/parclongchamp.jpg" alt="Parc Longchamp" class="responsiveA"> <h4>Parc Longchamp</h4>
                                 </div>
 
                             </div>

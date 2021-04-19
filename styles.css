@@ -30,7 +30,6 @@ nav ul
     list-style-type: none;
     display: flex;
     flex-direction: row; 
-    border: 2px solid maroon;
 }
 
 
@@ -98,7 +97,7 @@ input {
 
 .filtres {
     font-size: 30px;
-    margin: 90px;
+    margin: 40px;
 }
 
 .filtres h3 {
@@ -106,7 +105,7 @@ input {
 }
 
 
-.fa-money-bill-wave,.fa-heart, .fa-male, .fa-dog {
+.fa-money-bill-wave,.fa-heart,.fa-dog {
     padding: 20px 17px 20px 17px;
     border-radius: 50px;
     background-color: #DEEBFF ;
@@ -159,7 +158,7 @@ input {
 
 
 .info {
-    margin: 20px;
+    margin: 15px;
 }
 
 
@@ -179,7 +178,7 @@ input {
 }
 
 .fa-chart-line {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 
@@ -194,7 +193,7 @@ input {
 
 
 .HebergementsMarseille {
-    padding: 100px;
+    padding: 60px;
     flex: 40%;
     background-color: #f2f2f2;
     margin: 40px 50px 40px 0;
@@ -205,7 +204,7 @@ input {
 
 
 .LesPlusPopulaires {
-    padding:100px;
+    padding:60px;
     flex:18%;
     background-color: #f2f2f2;
     margin: 40px 0 40px 50px;
@@ -218,7 +217,7 @@ input {
 
 
 .titreH {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 .hebergements {
@@ -328,9 +327,7 @@ input {
     flex-wrap: wrap;
     justify-content:space-between;
     align-content:center;
-
-
-    border: 4px solid rgb(185, 19, 19);
+    padding: 20px;
 
 }
 
@@ -342,9 +339,6 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-
-
-    border: 3px solid black;
 
 }
 
@@ -406,6 +400,10 @@ footer {
    
 @media screen and (max-width: 1024px) {
 
+    * {
+        box-sizing: border-box;
+    }
+
             body {
                 width:100%;
                 box-sizing: border-box;
@@ -413,8 +411,7 @@ footer {
                 flex-wrap: wrap;
                 margin: 25px;
                 
-                background-color: springgreen;
-                border: 15px rgb(19, 18, 3);
+                
             }
 
             #logo {
@@ -423,14 +420,12 @@ footer {
             }
 
             .Hautpage {
-                box-sizing: border-box;
                
                 width: 100%;
-                color: mediumorchid;
                 display: flex;
                 flex-direction: column;
 
-                border: 5px solid maroon;
+               
             }
 
             nav li {
@@ -441,16 +436,40 @@ footer {
             .lienH a:hover {
                 border-bottom: 5px solid #0065FC;
                 padding: 0 20px 10px 20px;
-                color: beige;
+            }
+
+            .lienA a:hover {
+                border-bottom:5px solid #DEEBFF;
+                padding: 0 20px 10px 20px;
+            }
+
+            .fa-map-marker-alt {
+                padding: 20px;
+                border-radius: 14px 0 0 14px;
+            }
+
+            input {
+                padding: 15px;
+               
             }
           
             .ChampsRecherche, input, .rechercher{
-                font-size: 20px;
+                font-size: 22px;
                 text-align: center; 
             }
 
             .ChampsRecherche{
-                 margin: 15px;
+                 margin: 20px;
+            }
+
+            .rechercher {
+                border-radius: 0 14px 14px 0;
+                padding: 15px;
+            }
+
+            .fa-info{
+                padding:7px 15px 7px 15px;
+                border-radius: 45px;
             }
     
             .filtres>h3 {
@@ -465,7 +484,6 @@ footer {
                 margin: 10px;
                 text-align: center;
 
-                border:4px solid green;
             }
 
 
@@ -473,19 +491,24 @@ footer {
             #eco, #rom, #anim, #fam, .economique,.romantique,.animaux,.familial{
                 margin: 10px;
                 padding: 20px 15px 20px 15px;
-                font-size: 20px;
+                font-size: 22px;
             }
 
             .fa-male {
                 padding:19px 26px 19px 26px;
             }
 
+            .fa-money-bill-wave,.fa-heart,.fa-dog {
+                padding: 20px 17px 20px 17px;
+                border-radius: 50px;
+            }
+
 
            
             .HebergementsMarseille, .LesPlusPopulaires{
                     
-                padding:7px;
-                margin:3px;
+                padding:8px;
+                margin:1px;
                 width: 100%;
                 height: auto;
 
@@ -498,8 +521,8 @@ footer {
             }
 
             .hebergements, .ActivitesMarseille,.populaires {
-                padding: 7px;
-                margin-bottom: 10px;
+                padding: 5px;
+                margin-bottom: 5px;
                 width: 100%;
 
                 text-align: center;
@@ -507,8 +530,7 @@ footer {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-               
-                border: 2px solid greenyellow;
+            
                 
             }
             
@@ -519,7 +541,6 @@ footer {
                      width: 100%;
                     height: auto;
                     
-                    border: 3px solid rgb(247, 2, 2);
                     }
 
                                 .LesPlusPopulaires {
@@ -535,12 +556,16 @@ footer {
 
                                     .populaires img {
                                         margin-right: 0px;
-
-                                        border: 2px solid green;
                                     }
 
+                                    .fa-chart-line {
+                                        font-size: 30px;
+                                        padding: 10px;
+                                    }
+                                    
+
                                     .hotel-le-soleil-du-matin, .au-coeur, .hotel-tout-bleu-et-blanc {
-                                        border: 2px solid white;
+                                        border: 10px solid white;
                                        
                                     }
                                     
@@ -549,19 +574,16 @@ footer {
                                     overflow: hidden;
                                     order:1;
                                     background-color: white;
-
-                                    border:3px solid blue;
                                     }
 
                 .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
                    
-                    border: 9px solid rgb(0, 81, 255);
+                    border: 10px solid white;
                 }
 
                 .responsiveH {
                     width:100%;
                     height:150px;
-                    border:2px solid rgb(36, 250, 250);
                     
                 }
             
@@ -570,12 +592,6 @@ footer {
                 }
 
 
-
-                            .ActivitesMarseille {
-                            
-                            
-                                border: 2px solid yellow;
-                            }
 
                             .colonneA1, .colonneA2 {
                                 display: inline-block;
@@ -602,53 +618,249 @@ footer {
                     margin: none;
                     padding: 25px;
     
-    
-                    color: rgb(193, 54, 228);
                     }
     
 
             }
 
 
-
-            @media screen and (max-width: 667px) {
+/*Contenu pour un écran de 736px de largeur comme un  Iphone8 Plus par exemple*/
+            @media screen and (max-width: 736px) {
                 body {
-                    font-size: 20px;
-                    background-color: hotpink;
+                    font-size: 12px;
                 }
 
                 #logo {
-                    height:50px;
-                    width: 50px;
+                    height:60px;
+                    width: 60px;
+                    padding:none;
+                    margin-bottom:2px;
+                }
+
+                .Hautpage {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
+                nav ul {
+                    text-align: center;
                 }
 
                 nav li {
-                    width: 100%;
+                    margin:10px;
                 }
 
-                .ChampsRecherche{
-                    font-size: 20px;
-                    text-align: center;
-                    width: 100%;
-
-            }
-                .input {
-                    padding: 5px;
+    
+                .lienH a:hover {
+                    border-bottom: 3px solid #0065FC;
+                    padding: 0 10px 10px 10px;
                 }
+    
+                .lienA a:hover {
+                    border-bottom:3px solid #DEEBFF;
+                    padding: 0 10px 10px 10px;
+                }
+
+
+
 
                 .fa-map-marker-alt {
-                    padding: 5px;
+                    padding: 11px;
+                    border-radius: 10px 0 0 10px;
+                }
+
+                input {
+                    padding: 8px;
                 }
 
                 .rechercher {
-                    padding: 5px;
+                    padding: 8px;
+                    border-radius: 0 12px 12px 0;
+                }
+
+                .ChampsRecherche, input, .rechercher{
+                    font-size: 12px;
                 }
 
                 .ChampsRecherche {
-                    padding: 4px;
+                    padding: 14px;
+                
                 }
 
+                .filtres h3 {
+                    font-size: medium;
+                }
+
+                .filtres {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    width: 100%;
+                    margin: 10px;
+                    text-align: left;
+    
+                }
+                #eco, #rom, #anim, #fam{
+                    margin: 10px;
+                    padding: 9px 20px 9px 20px;
+                    
+                }
+                .economique,.romantique,.animaux,.familial {
+                    font-size: 14px;
+                    position: relative;
+                    left:1px;
+                }
+                
+
+
+                .fa-male {
+                    padding:12px 15px 12px 15px;
+                    position: absolute;
+                    bottom:3px;
+                    font-size: small;
+                }
+    
+                .fa-money-bill-wave,.fa-heart,.fa-dog {
+                    padding: 13px 9px 13px 9px;
+                    border-radius: 35px;
+                    position: absolute;
+                    bottom:3px;
+                    font-size: small;
+                }
+
+                .info {
+                    margin: 15px;
+                }
+                
+                
+                .fa-info{
+                    padding:7px 10px 7px 10px;
+                    border-radius: 20px;
+                }
+
+                .titreP{
+                    margin-bottom: 10px;
+                }
+
+                .fa-chart-line {
+                    font-size: 15px;
+                    padding: 5px;
+                }
+
+                .LesPlusPopulaires {
+                    text-align: left;
+                    }
+
+                
+                    .pop{
+                        text-align: left;
+                        margin-left: 1px;
+                    }
+
+                    .pop>.fa-star {
+                        margin-top:50px;
+                    }
+
+                
+
+                .responsiveP {
+                    width: 100%;
+                    height: 50px;
+                }
+
+                .populaires img {
+                    margin: 1px;
+                    height: 150px;
+                    width: 40%;
+                    border: 2px solid white;
+                    
+                }
+
+                .hotel-le-soleil-du-matin, .au-coeur, .hotel-tout-bleu-et-blanc {
+                    border: 1px solid white;
+                    width: 100%;
+                    margin:10px;
+
+                    
+
+                }
+
+                .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
+                   
+                    border: 5px solid white;
+                    border-radius: 20px;
+                    text-align: left;
+                    width: 100%;
+                    height: fit-content;
+                    margin: 10px;
+
+            
+                }
+
+                .hebergements img {
+                    width:100%;
+                    height:120px;
+                    border-radius:20px 20px 0 0;
+                    
+                }
+
+                .afficherplus {
+                    margin-top: 1px;
+                }
+            
+                .titreH {
+                    text-align: left;
+                }
+
+                .ActivitesMarseille {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    align-items: stretch;
+                }
+
+                .colonneA1,.colonneA2 {
+                    flex-wrap: wrap;
+                    width: 100%;
+                }
+
+                .notre-dame-de-la-garde img, .parc-longchamps img,  .iles-du-frioul img,.fort-de-promegues img,
+                .vieux-port img, .parc-national-des-calanques img {
+
+                    margin: 1px;
+                    width: 100%;
+                    height: 150px;
+                    border-radius: 20px 20px 0 0;
+                }
+
+                .notre-dame-de-la-garde, .parc-longchamps, .iles-du-frioul, .fort-de-promegues, .vieux-port,.parc-national-des-calanques {
+                    margin: 15px;
+                    width: 100%;
+                    border-radius: 20px;
+                }
+
+
+
+                
+
             }
+
+                
+
+
+
+
+
+              
+
+
+
+
+    
+             
 
 
 

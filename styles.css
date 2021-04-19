@@ -6,7 +6,7 @@
 body {
     margin: 1%;
     font-family: 'Raleway', sans-serif;
-    font-size: 33px;
+    font-size: 30px;
 }
 
 .Hautpage {
@@ -62,15 +62,6 @@ nav li {
 }
 
 
-
-
-
-
-
-
-
-
-
 .fa-map-marker-alt {
     background-color: #f2f2f2;
     padding: 30px;
@@ -101,12 +92,12 @@ input {
 }
 
 .ChampsRecherche, input, .rechercher{
-    font-size: 33px;
+    font-size: 30px;
 }
 
 
 .filtres {
-    font-size: 35px;
+    font-size: 30px;
     margin: 90px;
 }
 
@@ -161,7 +152,7 @@ input {
 .economique, .romantique, .animaux, .familial {
     position: relative;
     left:43px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -188,7 +179,7 @@ input {
 }
 
 .fa-chart-line {
-    font-size: 60px;
+    font-size: 40px;
 }
 
 
@@ -203,12 +194,11 @@ input {
 
 
 .HebergementsMarseille {
-    border-radius: 20px;
     padding: 100px;
     flex: 40%;
     background-color: #f2f2f2;
     margin: 40px 50px 40px 0;
-
+    border-radius: 40px;
 }
 
 
@@ -219,7 +209,7 @@ input {
     flex:18%;
     background-color: #f2f2f2;
     margin: 40px 0 40px 50px;
-    border-radius: 20px;
+    border-radius: 40px;
 
 }
 
@@ -266,8 +256,8 @@ input {
 
 .hebergements img {
     border-radius:40px 40px 0 0;
-    height: 375px;
-    width: 635px;
+    height: 395px;
+    width: 655px;
     object-fit: cover;
 }
 
@@ -319,19 +309,28 @@ input {
 .populaires img {
     border-radius:40px 0 0 40px;
     border: 15px solid white;
-    height: 400px;
-    width: 350px;
+    height: 420px;
+    width: 370px;
     margin-right: 20px;
     object-fit: cover;
 }
 
 
-.activites {
+
+.ActivitesMarseille>h2{
+    flex: 100%;
+    margin-top: 60px;
+}
+
+.ActivitesMarseille{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-between;
-    margin:50px;
+    align-content:center;
+
+
+    border: 4px solid rgb(185, 19, 19);
 
 }
 
@@ -341,11 +340,15 @@ input {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: stretch;
+
+
+    border: 3px solid black;
 
 }
 
-.activites img {
+.ActivitesMarseille img {
     border-radius:40px 40px 0 0;
     object-fit: cover;
 }
@@ -364,26 +367,27 @@ input {
 
 
 .notre-dame-de-la-garde img, .parc-longchamps img {
-    height: 400px;
-    width: 820px;
+    height: 430px;
+    width: 840px;
     object-fit: cover;
 }
 
 .iles-du-frioul img {
-    height: 250px;
-    width:820px;
+    height: 270px;
+    width:840px;
+    object-fit: cover;
 }
 
 
 .fort-de-promegues img {
-    height:540px;
-    width:820px;
+    height:570px;
+    width:840px;
     object-fit: cover;
 }
 
 .vieux-port img, .parc-national-des-calanques img {
-    height: 1050px;
-    width: 820px;
+    height: 1070px;
+    width: 840px;
     object-fit: cover;
 }
 
@@ -398,17 +402,14 @@ footer {
 }
 
 
-/*Contenu pour un écran de 667px de largeur comme un  iphone8*/
+/*Contenu pour un écran de 1024px de largeur comme un  ipad*/
    
-
-
-
 @media screen and (max-width: 1024px) {
 
             body {
                 width:100%;
                 box-sizing: border-box;
-                font-size: 25px;
+                font-size: 22px;
                 flex-wrap: wrap;
                 margin: 25px;
                 
@@ -423,12 +424,13 @@ footer {
 
             .Hautpage {
                 box-sizing: border-box;
-                border: 5px solid maroon;
+               
                 width: 100%;
                 color: mediumorchid;
                 display: flex;
                 flex-direction: column;
 
+                border: 5px solid maroon;
             }
 
             nav li {
@@ -444,18 +446,15 @@ footer {
           
             .ChampsRecherche, input, .rechercher{
                 font-size: 20px;
-                text-align: center;
-                
+                text-align: center; 
             }
+
             .ChampsRecherche{
                  margin: 15px;
             }
     
             .filtres>h3 {
-                display: block;
                 flex-basis: 100%;
-
-                color: red;
             }
 
             .filtres {
@@ -477,8 +476,13 @@ footer {
                 font-size: 20px;
             }
 
+            .fa-male {
+                padding:19px 26px 19px 26px;
+            }
+
+
            
-            .HebergementsMarseille, .LesPlusPopulaires,.ActivitesMarseille {
+            .HebergementsMarseille, .LesPlusPopulaires{
                     
                 padding:7px;
                 margin:3px;
@@ -493,7 +497,7 @@ footer {
 
             }
 
-            .hebergements, .activites,.populaires {
+            .hebergements, .ActivitesMarseille,.populaires {
                 padding: 7px;
                 margin-bottom: 10px;
                 width: 100%;
@@ -504,7 +508,7 @@ footer {
                 justify-content: center;
                 align-items: center;
                
-                border: 5px solid greenyellow;
+                border: 2px solid greenyellow;
                 
             }
             
@@ -515,7 +519,7 @@ footer {
                      width: 100%;
                     height: auto;
                     
-                    border: 5px solid rgb(247, 2, 2);
+                    border: 3px solid rgb(247, 2, 2);
                     }
 
                                 .LesPlusPopulaires {
@@ -529,23 +533,24 @@ footer {
                                         height: 400px;
                                     }
 
+                                    .populaires img {
+                                        margin-right: 0px;
+
+                                        border: 2px solid green;
+                                    }
+
                                     .hotel-le-soleil-du-matin, .au-coeur, .hotel-tout-bleu-et-blanc {
-                                        border: 9px solid white;
+                                        border: 2px solid white;
                                        
                                     }
                                     
-
-
-                                    .activites h4 {
-                                        margin-left:none;
-                                    }
 
                                 .HebergementsMarseille {
                                     overflow: hidden;
                                     order:1;
                                     background-color: white;
 
-                                    border:8px solid blue;
+                                    border:3px solid blue;
                                     }
 
                 .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
@@ -556,7 +561,7 @@ footer {
                 .responsiveH {
                     width:100%;
                     height:150px;
-                    border:9px solid rgb(36, 250, 250);
+                    border:2px solid rgb(36, 250, 250);
                     
                 }
             
@@ -569,14 +574,18 @@ footer {
                             .ActivitesMarseille {
                             
                             
-                                border: 5px solid yellow;
+                                border: 2px solid yellow;
+                            }
+
+                            .colonneA1, .colonneA2 {
+                                display: inline-block;
                             }
 
 
                             .notre-dame-de-la-garde img, .parc-longchamps img,  .iles-du-frioul img,.fort-de-promegues img,
                             .vieux-port img, .parc-national-des-calanques img {
 
-                                margin: none;
+                                margin: 1px;
                                 width: 100%;
                                 height: 500px;
                             }
@@ -641,47 +650,12 @@ footer {
 
             }
 
-/*
-                
-.fa-map-marker-alt {
-    background-color: #f2f2f2;
-    padding: 30px;
-    border-radius: 14px 0 0 14px;
-}
-
-input {
-    padding: 25px;
-    border:2px solid #f2f2f2;
-}
-
-::placeholder {
-    font-weight: bold;
-    color: black;
-    opacity: 1;
-}
-
-.rechercher {
-    background-color:#0065FC;
-    border:1px solid #0065FC;
-    color: white;
-    border-radius: 0 14px 14px 0;
-    padding: 25px;
-}
-
-.ChampsRecherche {
-   padding: 8px;
-}
-
-.ChampsRecherche, input, .rechercher{
-    font-size: 33px;
-}
-
-*/
 
 
 
 
-        }
+
+        
             
 
                 

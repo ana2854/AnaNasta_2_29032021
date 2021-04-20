@@ -6,7 +6,8 @@
 body {
     margin: 1%;
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
+    background-color: rgb(48, 46, 46);
 }
 
 .Hautpage {
@@ -63,12 +64,12 @@ nav li {
 
 .fa-map-marker-alt {
     background-color: #f2f2f2;
-    padding: 30px;
-    border-radius: 14px 0 0 14px;
+    padding: 14px;
+    border-radius: 8px 0 0 8px;
 }
 
 input {
-    padding: 25px;
+    padding: 10px;
     border:2px solid #f2f2f2;
 }
 
@@ -82,22 +83,22 @@ input {
     background-color:#0065FC;
     border:1px solid #0065FC;
     color: white;
-    border-radius: 0 14px 14px 0;
-    padding: 25px;
+    border-radius: 0 8px 8px 0;
+    padding: 10px;
 }
 
 .ChampsRecherche {
-   padding: 8px;
+   padding: 4px;
 }
 
 .ChampsRecherche, input, .rechercher{
-    font-size: 20px;
+    font-size: 14px;
 }
 
 
 .filtres {
-    font-size: 20px;
-    margin: 20px;
+    font-size: 14px;
+    margin: 10px;
 }
 
 .filtres h3 {
@@ -106,41 +107,41 @@ input {
 
 
 .fa-money-bill-wave,.fa-heart,.fa-dog {
-    padding: 20px 17px 20px 17px;
-    border-radius: 50px;
+    padding: 11px 8px 11px 8px;
+    border-radius: 40px;
     background-color: #DEEBFF ;
     color: #0065FC;
     position:absolute;
     left: 0px;
-    top: 3px;
+    top: 1px;
     z-index: 2;
 }
 
 .fa-male {
-    padding:22px 33px 22px 33px;
-    border-radius: 53px;
+    padding:11px 15px 11px 15px;
+    border-radius: 30px;
     background-color: #DEEBFF ;
     color: #0065FC;
     position:absolute;
     left: 0px;
-    top: 3px;
+    top: 1px;
     z-index: 2;
 }
 
 
 
 #eco, #fam, #rom, #anim {
-    margin: 15px;
-    padding: 20px 70px 20px 70px;
+    margin: 10px;
+    padding: 10px 40px 10px 40px;
     border : solid 2px #D3D0D2;
-    border-radius: 50px;
+    border-radius: 40px;
     font-weight: normal;
     position: relative;
     z-index:1;
 }
 
 #eco:hover, #fam:hover, #rom:hover, #anim:hover {
-    border: 8px solid rgb(250, 247, 247);
+    border: 4px solid rgb(250, 247, 247);
     color: rgb(5, 16, 22);
     font-weight: bold;
     background-color: rgb(213, 253, 253);
@@ -150,12 +151,11 @@ input {
 
 .economique, .romantique, .animaux, .familial {
     position: relative;
-    left:43px;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
 }
 
-
+/*info*/
 
 .info {
     margin: 15px;
@@ -164,31 +164,69 @@ input {
 
 .fa-info{
     color:#0065FC;
-    border:2px solid #DEEBFF;
-    padding:12px 23px 12px 23px;
-    border-radius: 46px;
+    border:1px solid #DEEBFF;
+    padding:8px 12px 8px 12px;
+    border-radius: 20px;
 }
+
+/*etoile*/
 
 .fa-star {
     color:#0065FC;
+    font-size: 9px;
 }
 
 .etoilegrise>.fa-star{
     color: #b6b6b0;
 }
 
+/*logo fleche*/
+
 .fa-chart-line {
     font-size: 20px;
 }
 
+/*paragraphes, heading */
 
+.hebergements p, .hebergements h4, .populaires p, .populaires h4 {
+    margin-left: 10px;
+    margin-top: 1px;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0px;
+    line-height: 20px;
+}
+
+/*etoiles */
+
+.etoiles {
+    margin-left: 10px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 4px;
+    padding: 0;
+    line-height: 20px;
+}
+
+.etoilesP{
+    margin-top:45px;
+    margin-left:10px;
+    margin-right:0;
+    margin-bottom:4px;
+}
+
+
+/*Grande boite*/
 
 .BoxHP {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
+
+
+    border: 6px solid red;
 }
 
 
@@ -196,8 +234,11 @@ input {
     padding: 10px;
     width: 60%;
     background-color: #f2f2f2;
-    margin: 40px 50px 40px 0;
+    margin: 0px 20px 10px 0;
     border-radius: 40px;
+
+    
+    border: 5px solid blue;
 }
 
 
@@ -205,30 +246,35 @@ input {
 
 .LesPlusPopulaires {
     padding:10px;
-    width:30%;
+    width:35%;
     background-color: #f2f2f2;
-    margin: 10px 0 10px 10px;
+    margin: 0px 0 10px 20px;
     border-radius: 40px;
+
+
+    border:5px solid rgb(219, 7, 184);
 
 }
 
-
-
+/*Hebergements*/
 
 
 .titreH {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
+
+
 
 .hebergements {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
+    justify-content:space-evenly;
     overflow: hidden;
     flex-wrap: wrap;
+    padding: 10px;
    
 
+    border: 4px solid rgb(0, 195, 255);
 }
 
 
@@ -238,98 +284,130 @@ input {
     font-weight: bold;
 }
 
-
-
-
+/*div hebergements*/
 
 .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
     background-color: white;
-    border: 15px solid white;
+    border: 10px solid white;
     overflow: hidden;
-    border-radius: 40px;
-    align-content: space-around;
+    border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin:20px;
-    width: 30%;
-    height: 400px;
+    margin:7px;
+    width:30%;
+   
+
+
+    border: 3px solid rgb(7, 52, 134);
   
 }
 
+/*hebergements images*/
+
 .hebergements img {
-    border-radius:40px 40px 0 0;
+    border-radius:25px 25px 0 0;
+    width: 100%;
+    height: 130px;
     object-fit: cover;
+
+    border: 3px solid rgb(5, 138, 138);
 }
 
 .afficherplus {
     margin-top: 20px;
 }
 
+/*Fin hebergements*/
 
+/*section populaire*/
 
 .titreP{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
+
+    
+    border: 2px solid rgb(222, 27, 248);
 }
 
 .pop{
 
-    margin-left: 25px;
+    margin-left: 10px;
 }
 
-.pop>.fa-star {
-    margin-top:50px;
-}
+
+
+/*petite boite populaire*/
 
 .populaires {
     display: flex;
     flex-direction:column;
+    justify-content: center;
     flex-wrap: wrap;
     overflow: hidden;
-    justify-content: space-between;
-    align-content: flex-start;
+    align-content:space-around;
+    padding: 10px;
+
+
+    border: solid 4px rgb(5, 209, 22);
 
 }
 
-
+/*div populaire*/
 
 .hotel-le-soleil-du-matin, .au-coeur, .hotel-tout-bleu-et-blanc {
     background-color: white;
     border: 10px solid white;
     display: flex;
     flex-direction: row;
-    border-radius: 40px;
+    overflow: hidden;
+    border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin:25px;
+    width: 90%;
+    margin:7px;
+
+
+    border: 3px solid rgb(245, 14, 25);
 }
 
+/*images pop*/
+
 .populaires img {
-    border-radius:40px 0 0 40px;
+    border-radius:25px 0 0 30px;
     border: 15px solid white;
-    height: 420px;
-    width: 370px;
-    margin-right: 20px;
+    width: 120px;
+    height: 110px;
     object-fit: cover;
+
+
+    border: 3px solid rgb(107, 3, 107);
 }
+
+
+/*Activites */
 
 
 
 .ActivitesMarseille>h2{
     flex: 100%;
     margin-top: 50px;
+    border: 3px solid rgb(223, 223, 160);
 }
+
+
+
 
 .ActivitesMarseille{
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     flex-wrap: wrap;
     justify-content:space-between;
     align-content:center;
     padding: 20px;
+    width: 100%;
     
-
+    border: 5px solid rgb(168, 5, 5);
 }
 
 
@@ -338,54 +416,124 @@ input {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
+    justify-content: space-between;
+    width: 22%;
+
+
+    border:3px solid rgb(253, 166, 5);
 
 }
 
-.ActivitesMarseille img {
-    border-radius:40px 40px 0 0;
+
+.ActivitesMarseille img, .colonneA1 img, .colonneA2 img {
+    border-radius:30px 30px 0 0;
     object-fit: cover;
+    width: 100%;
+
+    border: 3px solid rgb(60, 255, 0);
 }
 
-.vieux-port, .fort-de-promegues, .iles-du-frioul, .parc-national-des-calanques, .notre-dame-de-la-garde, .parc-longchamps {
-    border-radius: 40px;
+
+
+.vieux-port,  .parc-national-des-calanques {
+    border-radius: 30px;
+    margin-bottom: 10px;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin:40px;
-    width: 25%;
-    height: 100px;
-}
+
+    width: 22%;
+    height: 430px;
 
 
-
-
-.notre-dame-de-la-garde img, .parc-longchamps img {
-    width: 25%;
-    object-fit: cover;
-}
-
-.iles-du-frioul img {
-    height: 270px;
-    width:840px;
-    object-fit: cover;
-}
-
-
-.fort-de-promegues img {
-    height:570px;
-    width:840px;
-    object-fit: cover;
+    border:3px solid rgb(12, 14, 6);
 }
 
 .vieux-port img, .parc-national-des-calanques img {
-    height: 1070px;
-    width: 840px;
+    height: 380px;
     object-fit: cover;
 }
+
+
+.fort-de-promegues {
+    border-radius: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    width: 100%;
+    height: 250px;
+
+
+    border:3px solid rgb(12, 14, 6);
+}
+
+.fort-de-promegues img {
+    height:200px;
+    object-fit: cover;
+
+}
+
+.iles-du-frioul {
+    border-radius: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    width: 100%;
+    height: 150px;
+
+
+    border:3px solid rgb(12, 14, 6);
+}
+
+.iles-du-frioul img {
+    height: 100px;
+    object-fit: cover;
+
+}
+
+.notre-dame-de-la-garde, .parc-longchamps {
+    border-radius: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    width: 100%;
+    height: 200px;
+
+
+    border:3px solid rgb(12, 14, 6);
+}
+
+.notre-dame-de-la-garde img, .parc-longchamps img {
+    height:150px;
+    object-fit:cover;
+
+    border: 3px solid rgb(218, 9, 218);
+}
+
+
+
+
+
+
+
 
 
 
@@ -409,7 +557,7 @@ footer {
             body {
                 width:100%;
                 box-sizing: border-box;
-                font-size: 22px;
+                font-size: 14px;
                 flex-wrap: wrap;
                 margin: 25px;
                 
@@ -456,7 +604,7 @@ footer {
             }
           
             .ChampsRecherche, input, .rechercher{
-                font-size: 22px;
+                font-size: 14px;
                 text-align: center; 
             }
 
@@ -493,7 +641,7 @@ footer {
             #eco, #rom, #anim, #fam, .economique,.romantique,.animaux,.familial{
                 margin: 10px;
                 padding: 20px 15px 20px 15px;
-                font-size: 22px;
+                font-size: 14px;
             }
 
             .fa-male {
@@ -561,7 +709,7 @@ footer {
                                     }
 
                                     .fa-chart-line {
-                                        font-size: 30px;
+                                        font-size: 25px;
                                         padding: 10px;
                                     }
                                     

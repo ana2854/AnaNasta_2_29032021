@@ -554,7 +554,7 @@ footer {
                 box-sizing: border-box;
                 font-size: 14px;
                 flex-wrap: wrap;
-                margin: 25px;
+                margin:4%;
                 
                 
             }
@@ -578,14 +578,18 @@ footer {
              }
              
 
-            .lienH a:hover {
-                border-bottom: 5px solid #0065FC;
-                padding: 0 20px 10px 20px;
+            .lienA a {
+                border-bottom:2px solid rgb(180, 174, 174);
+                padding: 0 60px 10px 60px;
             }
 
-            .lienA a:hover {
-                border-bottom:5px solid #DEEBFF;
-                padding: 0 20px 10px 20px;
+            .lienH {
+                border-bottom: 2px solid #0065FC;
+                padding:0 60px 10px 60px;
+            }
+
+            .lienH a:hover {
+                display:none;
             }
 
             .fa-map-marker-alt {
@@ -631,8 +635,6 @@ footer {
 
             }
 
-
-
             #eco, #rom, #anim, #fam, .economique,.romantique,.animaux,.familial{
                 margin: 5px;
                 padding: 20px 15px 20px 15px;
@@ -652,25 +654,27 @@ footer {
            
             .HebergementsMarseille, .LesPlusPopulaires{
                     
-                padding:8px;
-                margin:1px;
+                padding:4px;
+                margin:10px 0 10px 0;
                 width: 100%;
                 height: auto;
 
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                text-align: center;
+                text-align: left;
+
+                
 
 
             }
 
             .hebergements, .ActivitesMarseille,.populaires {
                 padding: 5px;
-                margin-bottom: 5px;
+                margin-bottom: 10px;
                 width: 100%;
 
-                text-align: center;
+                text-align: left;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -689,16 +693,29 @@ footer {
                     }
 
                                 .LesPlusPopulaires {
-                                    text-align: center;
+                                    text-align: left;
                                     overflow: hidden;
+                                    align-content: center;
                                     order:0;
+                                    margin-bottom: 10px;
                                     }
 
-                                    .responsiveP {
-                                        width: 100%;
-                                        height: 400px;
+                                    .titreP {
+                                        margin-top:20px;
                                     }
 
+                                    .pop{
+
+                                        margin-left: 5px;
+                                    }
+                                    
+
+                                    .populaires img {
+                                        width: 40%;
+                                        height: 280px;
+                                        object-fit: cover;
+                                    
+                                    }
                                     .populaires img {
                                         margin-right: 0px;
                                     }
@@ -724,36 +741,36 @@ footer {
                 .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
                    
                     border: 10px solid white;
+                    width: 100%;
                 }
 
-                .responsiveH {
-                    width:100%;
-                    height:150px;
-                    
+                .hebergements img {
+                    width: 100%;
+                    height: 280px;
+                    object-fit: cover;
+        
                 }
-            
-                .titreH {
-                    text-align: center;
-                }
-
 
 
                             .colonneA1, .colonneA2 {
-                                display: inline-block;
-                            }
-
-
-                            .notre-dame-de-la-garde img, .parc-longchamps img,  .iles-du-frioul img,.fort-de-promegues img,
-                            .vieux-port img, .parc-national-des-calanques img {
-
-                                margin: 1px;
                                 width: 100%;
-                                height: 500px;
+                            }
+
+                            /*ipad*/
+                            /*div activites*/
+                            .vieux-port,.parc-national-des-calanques,.parc-longchamps,.notre-dame-de-la-garde,.fort-de-promegues,.iles-du-frioul {
+                                width: 100%;
+                                height:330px;
                             }
 
 
+                            /* img activites*/
+                            .vieux-port img,.notre-dame-de-la-garde img, .parc-longchamps img,  .iles-du-frioul img,.fort-de-promegues img, .parc-national-des-calanques img {
                             
-              
+        
+                                width: 100%;
+                                height: 280px;
+                            }
 
                 footer{
                     display: flex;
@@ -973,19 +990,19 @@ footer {
                     width: 100%;
                 }
 
-                .notre-dame-de-la-garde img, .parc-longchamps img,  .iles-du-frioul img,.fort-de-promegues img,
+                .notre-dame-de-la-garde img, .parc-longchamps img,  .iles-du-frioul img, .fort-de-promegues img,
                 .vieux-port img, .parc-national-des-calanques img {
 
-                    margin: 1px;
                     width: 100%;
                     height: 150px;
-                    border-radius: 20px 20px 0 0;
+                   
                 }
 
                 .notre-dame-de-la-garde, .parc-longchamps, .iles-du-frioul, .fort-de-promegues, .vieux-port,.parc-national-des-calanques {
-                    margin: 15px;
+    
                     width: 100%;
-                    border-radius: 20px;
+                    height: 200px;
+                   
                 }
 
 

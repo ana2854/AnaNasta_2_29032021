@@ -222,7 +222,7 @@ input {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: center;
+    justify-content: center;
     margin-top: 10px;
 
 
@@ -268,7 +268,8 @@ input {
 .hebergements {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content:center;
+    align-content: space-between;
     overflow: hidden;
     flex-wrap: wrap;
     padding: 10px;
@@ -540,476 +541,474 @@ footer {
     margin-top: 50px;
 }
 
-
-/*Contenu pour un écran de 1024px de largeur comme un  ipad*/
-   
+ 
 @media screen and (max-width: 1024px) {
 
     * {
         box-sizing: border-box;
     }
 
-            body {
-                width:100%;
-                box-sizing: border-box;
-                font-size: 14px;
-                flex-wrap: wrap;
-                margin:4%;
-                
-                
-            }
+    body {
+        width:100%;
+        box-sizing: border-box;
+        font-size: 14px;
+        flex-wrap: wrap;
+        margin:4%;
+    }
 
-            #logo {
-                height:100px;
-                width: 100px;
-            }
+    #logo {
+        height:100px;
+        width: 100px;
+    }
 
-            .Hautpage {
-               
-                width: 100%;
-                display: flex;
-                flex-direction: column;
+    .Hautpage {
+       
+        width: 100%;
+        display: flex;
+        flex-direction: column;  
+    }
 
-               
-            }
+    nav li {
+        margin: 30px;
+     }
+     
 
-            nav li {
-                margin: 30px;
-             }
-             
+    .lienA a {
+        border-bottom:1px solid rgb(180, 174, 174);
+        padding: 0 60px 10px 60px;
+    }
 
-            .lienA a {
-                border-bottom:2px solid rgb(180, 174, 174);
-                padding: 0 60px 10px 60px;
-            }
+    .lienH {
+        border-bottom: 1px solid #0065FC;
+        padding:0 60px 10px 60px;
+    }
 
-            .lienH {
-                border-bottom: 2px solid #0065FC;
-                padding:0 60px 10px 60px;
-            }
+    .lienH:hover {
+        display:none;
+    }
 
-            .lienH a:hover {
-                display:none;
-            }
+    .fa-map-marker-alt {
+        padding: 18px;
+        border-radius: 14px 0 0 14px;
+    }
 
-            .fa-map-marker-alt {
-                padding: 18px;
-                border-radius: 14px 0 0 14px;
-            }
+    input {
+        padding: 14.5px;
+       
+    }
+  
+    .ChampsRecherche, input, .rechercher{
+        font-size: 14px;
+        text-align: center; 
+    }
 
-            input {
-                padding: 14.5px;
-               
-            }
-          
-            .ChampsRecherche, input, .rechercher{
-                font-size: 14px;
-                text-align: center; 
-            }
+    .ChampsRecherche{
+         margin: 20px;
+    }
 
-            .ChampsRecherche{
-                 margin: 20px;
-            }
+    .rechercher {
+        border-radius: 0 14px 14px 0;
+        padding: 16px;
+    }
 
-            .rechercher {
-                border-radius: 0 14px 14px 0;
-                padding: 16px;
-            }
+    .fa-info{
+        padding:5px 8px 5px 8px;
+        border-radius: 15px;
+    }
 
-            .fa-info{
-                padding:5px 8px 5px 8px;
-                border-radius: 15px;
-            }
+    .filtres>h3 {
+        flex-basis: 100%;
+    }
+
+    .filtres {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+
+    }
+
+    #eco, #rom, #anim, #fam, .economique,.romantique,.animaux,.familial{
+        margin: 5px;
+        padding: 20px 15px 20px 15px;
+        font-size: 14px;
+    }
+
+    .fa-male {
+        padding:19px 22px 19px 22px;
+    }
+
+    .fa-money-bill-wave,.fa-heart,.fa-dog {
+        padding: 19px 16px 19px 16px;
+        border-radius: 50px;
+    }
+
+
+   
+    .HebergementsMarseille, .LesPlusPopulaires{
+            
+        padding:4px;
+        margin:10px 0 10px 0;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .hebergements, .ActivitesMarseille,.populaires {
+        padding: 5px;
+        margin-bottom: 10px;
+        width: 100%;
+
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
     
-            .filtres>h3 {
-                flex-basis: 100%;
-            }
 
-            .filtres {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                width: 100%;
-                margin: 10px;
-                text-align: center;
-
-            }
-
-            #eco, #rom, #anim, #fam, .economique,.romantique,.animaux,.familial{
-                margin: 5px;
-                padding: 20px 15px 20px 15px;
-                font-size: 14px;
-            }
-
-            .fa-male {
-                padding:19px 22px 19px 22px;
-            }
-
-            .fa-money-bill-wave,.fa-heart,.fa-dog {
-                padding: 19px 16px 19px 16px;
-                border-radius: 50px;
-            }
-
-
-           
-            .HebergementsMarseille, .LesPlusPopulaires{
-                    
-                padding:4px;
-                margin:10px 0 10px 0;
-                width: 100%;
-                height: auto;
-
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: left;
-
-                
-
-
-            }
-
-            .hebergements, .ActivitesMarseille,.populaires {
-                padding: 5px;
-                margin-bottom: 10px;
-                width: 100%;
-
-                text-align: left;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+    .BoxHP {
+            display: flex;
+            flex-direction: column;
+             width: 100%;
+            height: auto;
             
-                
             }
-            
 
-            .BoxHP {
-                    display: flex;
-                    flex-direction: column;
-                     width: 100%;
-                    height: auto;
-                    
-                    }
-
-                                .LesPlusPopulaires {
-                                    text-align: left;
-                                    overflow: hidden;
-                                    align-content: center;
-                                    order:0;
-                                    margin-bottom: 10px;
-                                    }
-
-                                    .titreP {
-                                        margin-top:20px;
-                                    }
-
-                                    .pop{
-
-                                        margin-left: 5px;
-                                    }
-                                    
-
-                                    .populaires img {
-                                        width: 40%;
-                                        height: 280px;
-                                        object-fit: cover;
-                                    
-                                    }
-                                    .populaires img {
-                                        margin-right: 0px;
-                                    }
-
-                                    .fa-chart-line {
-                                        font-size: 25px;
-                                        padding: 10px;
-                                    }
-                                    
-
-                                    .hotel-le-soleil-du-matin, .au-coeur, .hotel-tout-bleu-et-blanc {
-                                        border: 10px solid white;
-                                       
-                                    }
-                                    
-
-                                .HebergementsMarseille {
-                                    overflow: hidden;
-                                    order:1;
-                                    background-color: white;
-                                    }
-
-                .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
-                   
-                    border: 10px solid white;
-                    width: 100%;
-                }
-
-                .hebergements img {
-                    width: 100%;
-                    height: 280px;
-                    object-fit: cover;
-        
-                }
-
-
-                            .colonneA1, .colonneA2 {
-                                width: 100%;
+                        .LesPlusPopulaires {
+                            text-align: left;
+                            overflow: hidden;
+                            align-content: center;
+                            order:0;
+                            margin: 0 0 10px 0;
                             }
 
-                            /*ipad*/
-                            /*div activites*/
-                            .vieux-port,.parc-national-des-calanques,.parc-longchamps,.notre-dame-de-la-garde,.fort-de-promegues,.iles-du-frioul {
-                                width: 100%;
-                                height:330px;
+                            .titreP {
+                                margin-top:20px;
                             }
 
+                            .pop{
 
-                            /* img activites*/
-                            .vieux-port img,.notre-dame-de-la-garde img, .parc-longchamps img,  .iles-du-frioul img,.fort-de-promegues img, .parc-national-des-calanques img {
+                                margin-left: 5px;
+                            }
                             
-        
-                                width: 100%;
+
+                            .populaires img {
+                                width: 40%;
                                 height: 280px;
+                                object-fit: cover;
+                            
+                            }
+                            .populaires img {
+                                margin-right: 0px;
                             }
 
-                footer{
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    width: 100%;
-                    margin: none;
-                    padding: 25px;
-    
+                            .fa-chart-line {
+                                font-size: 25px;
+                                padding: 10px;
+                            }
+                            
+
+                            .hotel-le-soleil-du-matin, .au-coeur, .hotel-tout-bleu-et-blanc {
+                                border: 10px solid white;
+                               
+                            }
+                            
+
+                        .HebergementsMarseille {
+                            overflow: hidden;
+                            order:1;
+                            background-color: white;
+                            margin:0 0 10px 0;
+                            }
+
+        .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
+           
+            border: 10px solid white;
+            width: 100%;
+            margin:0 0 10px 0;
+        }
+
+        .hebergements img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+
+        }
+
+
+                    .colonneA1, .colonneA2 {
+                        width: 100%;
                     }
-    
+
+                    /*ipad*/
+                    /*div activites*/
+                    .vieux-port,.parc-national-des-calanques,.parc-longchamps,.notre-dame-de-la-garde,.fort-de-promegues,.iles-du-frioul {
+                        width: 100%;
+                        height:330px;
+                        margin:0 0 10px 0;
+                    }
+
+
+                    /* img activites*/
+                    .vieux-port img,.notre-dame-de-la-garde img, .parc-longchamps img,  .iles-du-frioul img,.fort-de-promegues img, .parc-national-des-calanques img {
+                    
+
+                        width: 100%;
+                        height: 280px;
+                    }
+
+        footer{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: none;
+            padding: 25px;
 
             }
 
 
+    }
+
+
+    
 /*Contenu pour un écran de 736px de largeur comme un  Iphone8 Plus par exemple*/
-            @media screen and (max-width: 736px) {
-                body {
-                    font-size: 12px;
-                }
+@media screen and (max-width: 736px)
+{
+    body {
+        font-size: 12px;
+    }
 
-                #logo {
-                    height:60px;
-                    width: 60px;
-                    padding:none;
-                    margin-bottom:2px;
-                }
+    #logo {
+        height:65px;
+        width: 65px;
+        padding:none;
+        margin-bottom:2px;
+        text-align: center;
+    }
 
-                .Hautpage {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                }
+    .Hautpage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-                nav ul {
-                    text-align: center;
-                }
+    .liensnavigation{
+       display: inline-block;
+    }
 
-                nav li {
-                    margin:10px;
-                }
+    nav li{
+        margin:10px;
+    }
 
     
-                .lienH a:hover {
-                    border-bottom: 3px solid #0065FC;
-                    padding: 0 10px 10px 10px;
-                }
+    .lienH a {
+        border-bottom: 3px solid #0065FC;
+        padding: 0 2px 5px 2px;
+    }
+
+    .lienA a {
+        border-bottom:1px solid #DEEBFF;
+        padding:0 2px 5px 2px;
+    }
+
+    .lienH {
+        border-bottom: 1px solid #0065FC;
+        padding:0 2px 5px 2px;
+    }
+
+    .lienH a:hover {
+        display:none;
+    }
+
+
+    .fa-map-marker-alt {
+        padding: 10.5px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    input {
+        padding: 7.5px;
+    }
+
+    .rechercher {
+        padding: 8px;
+        border-radius: 0 12px 12px 0;
+    }
+
+    .ChampsRecherche, input, .rechercher{
+        font-size: 12px;
+    }
+
+    .ChampsRecherche {
+        margin:15px 0 10px 0;
     
-                .lienA a:hover {
-                    border-bottom:3px solid #DEEBFF;
-                    padding: 0 10px 10px 10px;
-                }
+    }
 
+    .filtres h3 {
+        font-size: medium;
+    }
 
+    .filtres {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        width: 100%;
+        margin: 0 0 8px 0;
+        text-align: left;
 
-
-                .fa-map-marker-alt {
-                    padding: 10.5px;
-                    border-radius: 10px 0 0 10px;
-                }
-
-                input {
-                    padding: 8px;
-                }
-
-                .rechercher {
-                    padding: 8px;
-                    border-radius: 0 12px 12px 0;
-                }
-
-                .ChampsRecherche, input, .rechercher{
-                    font-size: 12px;
-                }
-
-                .ChampsRecherche {
-                    padding: 14px;
-                
-                }
-
-                .filtres h3 {
-                    font-size: medium;
-                }
-
-                .filtres {
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    align-items: flex-start;
-                    width: 100%;
-                    margin: 10px;
-                    text-align: left;
+    }
+    #eco, #rom, #anim, #fam{
+        margin: 5px;
+        padding: 8px 12px 8px 12px;
+        
+    }
+    .economique,.romantique,.animaux,.familial {
+        font-size: 12px;
+        position: relative;
+        left:7px;
+    }
     
-                }
-                #eco, #rom, #anim, #fam{
-                    margin: 10px;
-                    padding: 9px 20px 9px 20px;
-                    
-                }
-                .economique,.romantique,.animaux,.familial {
-                    font-size: 14px;
-                    position: relative;
-                    left:1px;
-                }
-                
 
 
-                .fa-male {
-                    padding:12px 15px 12px 15px;
-                    position: absolute;
-                    bottom:3px;
-                    font-size: small;
-                }
+    .fa-male {
+        padding:10px 12px 10px 12px;
+        position: absolute;
+        bottom:3px;
+        font-size: small;
+    }
+
+    .fa-money-bill-wave,.fa-heart,.fa-dog {
+        padding: 9px 8px 9px 8px;
+        border-radius: 35px;
+        position: absolute;
+        bottom:3px;
+        font-size: small;
+    }
+
+    .info {
+        margin-top: 5px;
+    }
     
-                .fa-money-bill-wave,.fa-heart,.fa-dog {
-                    padding: 13px 9px 13px 9px;
-                    border-radius: 35px;
-                    position: absolute;
-                    bottom:3px;
-                    font-size: small;
-                }
+    
+    .fa-info{
+        padding:3px 5px 3px 5px;
+        border-radius: 10px;
+    }
 
-                .info {
-                    margin-top: 10px;
-                }
-                
-                
-                .fa-info{
-                    border: 2px solid green;
-                    padding:2px 2px 8px 6px;
-                    border-radius: 6px;
-                }
+    .titreP{
+        margin-bottom: 10px;
+    }
 
-                .titreP{
-                    margin-bottom: 10px;
-                }
+    .fa-chart-line {
+        font-size: 15px;
+        padding: 5px;
+    }
 
-                .fa-chart-line {
-                    font-size: 15px;
-                    padding: 5px;
-                }
+    .LesPlusPopulaires {
+        text-align: left;
+        }
 
-                .LesPlusPopulaires {
-                    text-align: left;
-                    }
+    
+        .pop{
+            text-align: left;
+            margin-left: 1px;
+        }
 
-                
-                    .pop{
-                        text-align: left;
-                        margin-left: 1px;
-                    }
+        .pop>.fa-star {
+            margin-top:50px;
+        }
 
-                    .pop>.fa-star {
-                        margin-top:50px;
-                    }
+    
 
-                
+    .populaires img {
+        margin: 1px;
+        height: 150px;
+        width: 40%;
+        border: 2px solid white;
+        
+    }
 
-                .responsiveP {
-                    width: 100%;
-                    height: 50px;
-                }
+    .hotel-le-soleil-du-matin, .au-coeur, .hotel-tout-bleu-et-blanc {
+        border: 1px solid white;
+        width: 100%;
 
-                .populaires img {
-                    margin: 1px;
-                    height: 150px;
-                    width: 40%;
-                    border: 2px solid white;
-                    
-                }
+        
 
-                .hotel-le-soleil-du-matin, .au-coeur, .hotel-tout-bleu-et-blanc {
-                    border: 1px solid white;
-                    width: 100%;
-                    margin:10px;
+    }
 
-                    
+    .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
+       
+        border: 5px solid white;
+        border-radius: 20px;
+        text-align: left;
+        width: 100%;
+        height: fit-content;
 
-                }
 
-                .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
-                   
-                    border: 5px solid white;
-                    border-radius: 20px;
-                    text-align: left;
-                    width: 100%;
-                    height: fit-content;
-                    margin: 10px;
+    }
+
+    .hebergements img {
+        width:100%;
+        height:120px;
+        border-radius:20px 20px 0 0;
+        
+    }
+
+    .afficherplus {
+        margin-top: 2px;
+    }
+
+    .titreH {
+        text-align: left;
+    }
+
+    .ActivitesMarseille {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+
+    .colonneA1,.colonneA2 {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .notre-dame-de-la-garde img, .parc-longchamps img,  .iles-du-frioul img, .fort-de-promegues img,
+    .vieux-port img, .parc-national-des-calanques img {
+
+        width: 100%;
+        height: 150px;
+       
+    }
+
+    .notre-dame-de-la-garde, .parc-longchamps, .iles-du-frioul, .fort-de-promegues, .vieux-port,.parc-national-des-calanques {
+
+        width: 100%;
+        height: 200px;
+       
+    }
+
+}
+
+
+
+
+
 
             
-                }
 
-                .hebergements img {
-                    width:100%;
-                    height:120px;
-                    border-radius:20px 20px 0 0;
-                    
-                }
-
-                .afficherplus {
-                    margin-top: 1px;
-                }
-            
-                .titreH {
-                    text-align: left;
-                }
-
-                .ActivitesMarseille {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    align-items: stretch;
-                }
-
-                .colonneA1,.colonneA2 {
-                    flex-wrap: wrap;
-                    width: 100%;
-                }
-
-                .notre-dame-de-la-garde img, .parc-longchamps img,  .iles-du-frioul img, .fort-de-promegues img,
-                .vieux-port img, .parc-national-des-calanques img {
-
-                    width: 100%;
-                    height: 150px;
-                   
-                }
-
-                .notre-dame-de-la-garde, .parc-longchamps, .iles-du-frioul, .fort-de-promegues, .vieux-port,.parc-national-des-calanques {
-    
-                    width: 100%;
-                    height: 200px;
-                   
-                }
-
-
-
-                
-
-            }
+        
 
                 
 

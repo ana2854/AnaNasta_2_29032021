@@ -188,7 +188,7 @@ input {
 
 /*paragraphes, heading */
 
-.hebergements p, .hebergements h4, .populaires p, .populaires h4 {
+.hebergements p, .hebergements h4, .populaires p, .populaires h4, .ActivitesMarseille h4 {
     margin-left: 10px;
     margin-top: 1px;
     margin-right: 0;

@@ -64,12 +64,12 @@ nav li {
 
 .fa-map-marker-alt {
     background-color: #f2f2f2;
-    padding: 14px;
+    padding: 13px;
     border-radius: 8px 0 0 8px;
 }
 
 input {
-    padding: 10px;
+    padding: 9.5px;
     border:2px solid #f2f2f2;
 }
 
@@ -235,7 +235,7 @@ input {
     width: 60%;
     background-color: #f2f2f2;
     margin: 0px 20px 10px 0;
-    border-radius: 40px;
+    border-radius: 30px;
 
     
     border: 5px solid blue;
@@ -249,7 +249,7 @@ input {
     width:35%;
     background-color: #f2f2f2;
     margin: 0px 0 10px 20px;
-    border-radius: 40px;
+    border-radius: 30px;
 
 
     border:5px solid rgb(219, 7, 184);
@@ -313,7 +313,10 @@ input {
 }
 
 .afficherplus {
+
+    border: 3px solid maroon;
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 /*Fin hebergements*/
@@ -426,7 +429,7 @@ input {
 
 
 .ActivitesMarseille img, .colonneA1 img, .colonneA2 img {
-    border-radius:30px 30px 0 0;
+    border-radius:25px 25px 0 0;
     object-fit: cover;
     width: 100%;
 
@@ -436,7 +439,7 @@ input {
 
 
 .vieux-port,  .parc-national-des-calanques {
-    border-radius: 30px;
+    border-radius: 25px;
     margin-bottom: 10px;
     background-color: white;
     display: flex;
@@ -459,7 +462,7 @@ input {
 
 
 .fort-de-promegues {
-    border-radius: 30px;
+    border-radius: 25px;
     margin-bottom: 10px;
     background-color: white;
     display: flex;
@@ -482,7 +485,7 @@ input {
 }
 
 .iles-du-frioul {
-    border-radius: 30px;
+    border-radius: 25px;
     margin-bottom: 10px;
     background-color: white;
     display: flex;
@@ -505,7 +508,7 @@ input {
 }
 
 .notre-dame-de-la-garde, .parc-longchamps {
-    border-radius: 30px;
+    border-radius: 25px;
     margin-bottom: 10px;
     background-color: white;
     display: flex;
@@ -527,14 +530,6 @@ input {
 
     border: 3px solid rgb(218, 9, 218);
 }
-
-
-
-
-
-
-
-
 
 
 footer {
@@ -594,12 +589,12 @@ footer {
             }
 
             .fa-map-marker-alt {
-                padding: 20px;
+                padding: 18px;
                 border-radius: 14px 0 0 14px;
             }
 
             input {
-                padding: 15px;
+                padding: 14.5px;
                
             }
           
@@ -614,12 +609,12 @@ footer {
 
             .rechercher {
                 border-radius: 0 14px 14px 0;
-                padding: 15px;
+                padding: 16px;
             }
 
             .fa-info{
-                padding:7px 15px 7px 15px;
-                border-radius: 45px;
+                padding:5px 8px 5px 8px;
+                border-radius: 15px;
             }
     
             .filtres>h3 {
@@ -639,17 +634,17 @@ footer {
 
 
             #eco, #rom, #anim, #fam, .economique,.romantique,.animaux,.familial{
-                margin: 10px;
+                margin: 5px;
                 padding: 20px 15px 20px 15px;
                 font-size: 14px;
             }
 
             .fa-male {
-                padding:19px 26px 19px 26px;
+                padding:19px 22px 19px 22px;
             }
 
             .fa-money-bill-wave,.fa-heart,.fa-dog {
-                padding: 20px 17px 20px 17px;
+                padding: 19px 16px 19px 16px;
                 border-radius: 50px;
             }
 
@@ -816,7 +811,7 @@ footer {
 
 
                 .fa-map-marker-alt {
-                    padding: 11px;
+                    padding: 10.5px;
                     border-radius: 10px 0 0 10px;
                 }
 
@@ -881,13 +876,14 @@ footer {
                 }
 
                 .info {
-                    margin: 15px;
+                    margin-top: 10px;
                 }
                 
                 
                 .fa-info{
-                    padding:7px 10px 7px 10px;
-                    border-radius: 20px;
+                    border: 2px solid green;
+                    padding:2px 2px 8px 6px;
+                    border-radius: 6px;
                 }
 
                 .titreP{

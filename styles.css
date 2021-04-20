@@ -283,7 +283,7 @@ input {
     overflow: hidden;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin:7px;
+    margin:14px;
     width:30%;
    
 }
@@ -340,21 +340,21 @@ input {
 
 .hotel-le-soleil-du-matin, .au-coeur, .hotel-tout-bleu-et-blanc {
     background-color: white;
-    border: 5px solid white;
+    border: 3px solid white;
     display: flex;
     flex-direction: row;
     overflow: hidden;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 90%;
-    margin:7px;
+    margin:14px;
 }
 
 /*images pop*/
 
 .populaires img {
     border-radius:25px 0 0 30px;
-    border: 3px solid white;
+    border: 2px solid white;
     width: 120px;
     height: 110px;
     object-fit: cover;

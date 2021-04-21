@@ -495,30 +495,56 @@ footer {
     #logo {
         height:100px;
         width: 100px;
-        margin:0;
+        margin:0 0 0 5px;
         padding:0;
     }
+    
 
     .Hautpage {
-       
-        width: 100%;
+    
         display: flex;
-        flex-direction: column;  
+        flex-direction:row;
+        margin-bottom: 50px;
     }
 
-    nav li {
-        margin: 30px;
-     }
-     
+    .lienI {
+        display:none;
+        visibility: hidden;
+    }
+
+    .I {
+        display: block;
+        visibility: visible;
+        margin: 0 5px 0 0;
+    }
+
+    header {
+        display: flex;
+        flex:100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    ul {
+        padding:0;
+        margin:0;
+    }
+
+    ul li {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
 
     .lienA {
         border-bottom:1px solid rgb(180, 174, 174);
-        padding: 0 60px 10px 60px;
+        padding: 0 150px 10px 150px;
     }
 
     .lienH {
         border-bottom: 1px solid #0065FC;
-        padding:0 60px 10px 60px;
+        padding:0 150px 10px 150px;
     }
 
     .lienH:hover {
@@ -708,7 +734,7 @@ footer {
 
     #logo {
         height:65px;
-        width: 60px;
+        width: 90px;
 
 
         border: 2px solid maroon;
@@ -720,14 +746,6 @@ footer {
         /*justify-content: center;*/
 
         border: 2px solid black;
-    }
-
-    .liensnavigation{
-       display: inline-block;
-    }
-
-    nav li{
-        margin:10px;
     }
 
     .lienI {
@@ -742,28 +760,39 @@ footer {
         border: 2px solid green;
     }
 
-    header {
+    header{
         display: flex;
         flex: 100%;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 20px;
+      
 
         border: 2px solid rgb(0, 217, 255);
     }
 
-    
-    .lienH a {
-        padding: 0 2px 5px 2px;
-        width: 50%;
-
-
-        border: 2px solid rgb(126, 15, 230);
+    ul {
+        padding: 0;
+        margin: 0;
     }
 
-    .lienA a {
-        padding:0 2px 5px 2px;
+    ul li {
+        display: flex;
+        flex-direction: row;
+        margin:0;
+        
+    }
 
-        border:2px solid pink;
+    
+    .lienH{
+        padding: 0 40px 5px 80px;
+        margin:0;
+
+    }
+
+    .lienA{
+        padding:0 80px 5px 50px;
+
     }
 
     .BoxCR {

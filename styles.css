@@ -35,7 +35,6 @@ nav ul
 
 .lienH a{
    text-decoration: none;
-   border-bottom: 5px solid maroon;
 }
 
 
@@ -43,7 +42,6 @@ nav ul
     border-top: 2px solid #0065FC;
     border-bottom: 1px solid transparent;
     padding: 70px 30px 0 30px;
-    text-decoration: none;
 }
 
 
@@ -537,19 +535,29 @@ footer {
     }
 
     .lienA {
-        border-bottom:1px solid rgb(180, 174, 174);
+        border-bottom:1px solid #f2f2f2;
         padding: 0 150px 10px 150px;
     }
 
-    .lienH a{
+    .lienA:hover {
+        border-bottom:1px solid #0065FC;
+        padding: 0 150px 10px 150px;
+
+    }
+
+    .lienH {
+        border-bottom: 1px solid #f2f2f2;
+        padding:0 150px 10px 150px;
+
+    }
+    
+
+    .lienH:hover {
+        border-top: none;
         border-bottom: 1px solid #0065FC;
         padding:0 150px 10px 150px;
     }
 
-    .lienH:hover {
-        display:none;
-        opacity: 0;
-    }
 
     .fa-map-marker-alt {
         padding: 18px;
@@ -744,15 +752,21 @@ footer {
     header{
         margin-bottom: 30px;
     }
-
-
     
-    .lienH a{
+    .lienH{
         padding: 0 40px 5px 80px;
+    }
 
+    .lienH:hover {
+        padding: 0 40px 5px 80px;
     }
 
     .lienA{
+        padding:0 80px 5px 50px;
+
+    }
+
+    .lienA:hover {
         padding:0 80px 5px 50px;
 
     }

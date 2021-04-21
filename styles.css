@@ -35,6 +35,7 @@ nav ul
 
 .lienH a{
    text-decoration: none;
+   border-bottom: 5px solid maroon;
 }
 
 
@@ -42,6 +43,7 @@ nav ul
     border-top: 2px solid #0065FC;
     border-bottom: 1px solid transparent;
     padding: 70px 30px 0 30px;
+    text-decoration: none;
 }
 
 
@@ -539,7 +541,7 @@ footer {
         padding: 0 150px 10px 150px;
     }
 
-    .lienH {
+    .lienH a{
         border-bottom: 1px solid #0065FC;
         padding:0 150px 10px 150px;
     }
@@ -744,7 +746,7 @@ footer {
 
 
     
-    .lienH{
+    .lienH a{
         padding: 0 40px 5px 80px;
 
     }

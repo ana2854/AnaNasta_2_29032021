@@ -19,7 +19,7 @@ body {
 
 
 #logo {
-    width:250px;
+    width:200px;
     height: 100px;
     padding: 5px;
     margin-bottom: 5px;
@@ -40,6 +40,7 @@ nav ul
 
 .lienH:hover {
     border-top: 2px solid #0065FC;
+    border-bottom: 1px solid transparent;
     padding: 70px 30px 0 30px;
 }
 
@@ -52,6 +53,11 @@ nav ul
 .lienI {
     color: #0065FC;
     font-weight: bold;
+}
+
+.I {
+    display: none;
+    visibility: hidden;
 }
 
 
@@ -86,6 +92,11 @@ input {
     padding: 10px;
 }
 
+.ChampsRecherche2 {
+    visibility: hidden;
+    display:none;
+}
+
 .ChampsRecherche {
    padding: 4px;
 }
@@ -97,7 +108,10 @@ input {
 
 .filtres {
     font-size: 14px;
-    margin: 10px;
+    margin: 5px;
+
+
+    border: 2px solid black;
 }
 
 .filtres h3 {
@@ -157,7 +171,7 @@ input {
 /*info*/
 
 .info {
-    margin: 15px;
+    margin: 30px;
 }
 
 
@@ -187,11 +201,8 @@ input {
 
 /*paragraphes, heading */
 
-.hebergements p, .hebergements h4, .populaires p, .populaires h4, .ActivitesMarseille h4 {
-    margin-left: 10px;
-    margin-top: 1px;
-    margin-right: 0;
-    margin-bottom: 0;
+.hebergements p, .hebergements h4, .populaires p, .populaires h4 {
+    margin: 2px 0 0 10px;
     padding: 0px;
     line-height: 20px;
 }
@@ -221,40 +232,28 @@ input {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     margin-top: 10px;
 
 }
 
+.HebergementsMarseille h2, .ActivitesMarseille h2, .LesPlusPopulaires h2 {
+    margin-bottom: 10px;
+}
 
-.HebergementsMarseille {
+
+.HebergementsMarseille,.LesPlusPopulaires {
     padding: 10px;
     width: 60%;
     background-color: #f2f2f2;
-    margin: 0px 20px 10px 0;
+    margin: 0px 15px 10px 0;
     border-radius: 30px;
 }
-
-
 
 
 .LesPlusPopulaires {
-    padding:10px;
     width:35%;
-    background-color: #f2f2f2;
-    margin: 0px 0 10px 20px;
-    border-radius: 30px;
-
-
+    margin: 0px 0 10px 15px;
 }
-
-/*Hebergements*/
-
-
-.titreH {
-    margin-bottom: 5px;
-}
-
 
 
 .hebergements {
@@ -368,9 +367,12 @@ input {
 
 .ActivitesMarseille>h2{
     flex: 100%;
-    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
+.ActivitesMarseille h4 {
+    margin:15px 0 5px 15px;
+}
 
 
 
@@ -384,8 +386,6 @@ input {
     width: 100%;
     
 }
-
-
 
 .colonneA1, .colonneA2{
     display: flex;
@@ -403,18 +403,21 @@ input {
     width: 100%;
 }
 
-
-
-.vieux-port,  .parc-national-des-calanques {
+.vieux-port, .parc-national-des-calanques, .fort-de-promegues, .iles-du-frioul, .notre-dame-de-la-garde, .parc-longchamps {
     border-radius: 25px;
     margin-bottom: 10px;
     background-color: white;
+
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     overflow: hidden;
-    flex-direction: column;
+    
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
+}
+
+.vieux-port,  .parc-national-des-calanques {
     width: 22%;
     height: 430px;
 
@@ -422,20 +425,10 @@ input {
 
 .vieux-port img, .parc-national-des-calanques img {
     height: 380px;
-    object-fit: cover;
 }
 
 
 .fort-de-promegues {
-    border-radius: 25px;
-    margin-bottom: 10px;
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
     width: 100%;
     height: 250px;
 
@@ -443,19 +436,10 @@ input {
 
 .fort-de-promegues img {
     height:200px;
-    object-fit: cover;
 
 }
 
 .iles-du-frioul {
-    border-radius: 25px;
-    margin-bottom: 10px;
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     width: 100%;
     height: 150px;
@@ -464,19 +448,10 @@ input {
 
 .iles-du-frioul img {
     height: 100px;
-    object-fit: cover;
 
 }
 
 .notre-dame-de-la-garde, .parc-longchamps {
-    border-radius: 25px;
-    margin-bottom: 10px;
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-    flex-direction: column;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     width: 100%;
     height: 200px;
@@ -485,7 +460,6 @@ input {
 
 .notre-dame-de-la-garde img, .parc-longchamps img {
     height:150px;
-    object-fit:cover;
 
 }
 
@@ -508,14 +482,21 @@ footer {
     body {
         width:100%;
         box-sizing: border-box;
-        font-size: 14px;
+        font-size: 15px;
         flex-wrap: wrap;
         margin:4%;
     }
 
+    .hebergements p, .hebergements h4, .populaires p, .populaires h4, .ActivitesMarseille h4 {
+        line-height: 22px;
+    }
+
+
     #logo {
         height:100px;
         width: 100px;
+        margin:0;
+        padding:0;
     }
 
     .Hautpage {
@@ -530,7 +511,7 @@ footer {
      }
      
 
-    .lienA a {
+    .lienA {
         border-bottom:1px solid rgb(180, 174, 174);
         padding: 0 60px 10px 60px;
     }
@@ -573,6 +554,7 @@ footer {
         border-radius: 15px;
     }
 
+
     .filtres>h3 {
         flex-basis: 100%;
     }
@@ -602,48 +584,25 @@ footer {
         border-radius: 50px;
     }
 
+    
+
 
    
-    .HebergementsMarseille, .LesPlusPopulaires{
+    .HebergementsMarseille,.hebergements, .LesPlusPopulaires,.populaires, .ActivitesMarseille{
             
         padding:4px;
         margin:10px 0 10px 0;
         width: 100%;
         height: auto;
+        overflow: hidden;
 
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        text-align: left;
     }
-
-    .hebergements, .ActivitesMarseille,.populaires {
-        padding: 5px;
-        margin-bottom: 10px;
-        width: 100%;
-
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;    
-    }
-    
-
-    .BoxHP {
-            display: flex;
-            flex-direction: column;
-             width: 100%;
-            height: auto;
-            
-            }
 
                         .LesPlusPopulaires {
                             text-align: left;
-                            overflow: hidden;
-                            align-content: center;
                             order:0;
-                            margin: 0 0 10px 0;
                             }
 
                             .titreP {
@@ -652,19 +611,20 @@ footer {
 
                             .pop{
 
-                                margin-left: 5px;
+                                margin: 60px 0 0 10px;
+                            }
+
+                            .etoileP {
+                                margin: 50px 0 5px 0;
                             }
                             
 
                             .populaires img {
                                 width: 40%;
                                 height: 280px;
-                                object-fit: cover;
+                                margin: 0;
+                            }
                             
-                            }
-                            .populaires img {
-                                margin-right: 0px;
-                            }
 
                             .fa-chart-line {
                                 font-size: 25px;
@@ -674,28 +634,26 @@ footer {
 
                             .hotel-le-soleil-du-matin, .au-coeur, .hotel-tout-bleu-et-blanc {
                                 border: 10px solid white;
+                                margin:0 0 15px 0;
                                
                             }
                             
 
-                        .HebergementsMarseille {
-                            overflow: hidden;
-                            order:1;
-                            background-color: white;
-                            margin:0 0 10px 0;
-                            }
+         .HebergementsMarseille {
+             order:1;
+             background-color: white;
+             }                                                
 
         .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
            
             border: 10px solid white;
             width: 100%;
-            margin:0 0 10px 0;
+            margin:0 0 15px 0;
         }
 
         .hebergements img {
             width: 100%;
-            height: 280px;
-            object-fit: cover;
+            height: 300px;
 
         }
 
@@ -713,7 +671,7 @@ footer {
                     .vieux-port,.parc-national-des-calanques,.parc-longchamps,.notre-dame-de-la-garde,.fort-de-promegues,.iles-du-frioul {
                         width: 100%;
                         height:330px;
-                        margin:0 0 10px 0;
+                        margin:0 0 15px 0;
                     }
 
 
@@ -744,21 +702,24 @@ footer {
 @media screen and (max-width: 736px)
 {
     body {
-        font-size: 12px;
+        font-size: 15px;
+        background-color: rgba(61, 55, 55, 0.966);
     }
 
     #logo {
         height:65px;
-        width: 65px;
-        padding:none;
-        margin-bottom:2px;
-        text-align: center;
+        width: 60px;
+
+
+        border: 2px solid maroon;
     }
 
     .Hautpage {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction:row;
+        /*justify-content: center;*/
+
+        border: 2px solid black;
     }
 
     .liensnavigation{
@@ -769,49 +730,79 @@ footer {
         margin:10px;
     }
 
+    .lienI {
+        display: none;
+        visibility: hidden;
+    }
+
+    .I {
+        display: block;
+        visibility: visible;
+
+        border: 2px solid green;
+    }
+
+    header {
+        display: flex;
+        flex: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+
+        border: 2px solid rgb(0, 217, 255);
+    }
+
     
     .lienH a {
-        border-bottom: 3px solid #0065FC;
         padding: 0 2px 5px 2px;
+        width: 50%;
+
+
+        border: 2px solid rgb(126, 15, 230);
     }
 
     .lienA a {
-        border-bottom:1px solid #DEEBFF;
         padding:0 2px 5px 2px;
+
+        border:2px solid pink;
     }
 
-    .lienH {
-        border-bottom: 1px solid #0065FC;
-        padding:0 2px 5px 2px;
+    .BoxCR {
+        text-align: center;
+        margin: 10px 0 10px 0;
     }
 
-    .lienH a:hover {
-        display:none;
-    }
-
-
+    
     .fa-map-marker-alt {
-        padding: 10.5px;
+        padding: 13.5px 14px 13px 14px;
         border-radius: 10px 0 0 10px;
     }
 
     input {
-        padding: 7.5px;
-    }
-
-    .rechercher {
-        padding: 8px;
-        border-radius: 0 12px 12px 0;
-    }
-
-    .ChampsRecherche, input, .rechercher{
-        font-size: 12px;
+        padding:10px 170px 10px 2px;
     }
 
     .ChampsRecherche {
-        margin:15px 0 10px 0;
-    
+        display:none !important;
+        visibility: hidden !important;
     }
+
+    .ChampsRecherche2 {
+        display: inline !important;
+        visibility: visible !important;
+    }
+
+
+    .ChampsRecherche2, input, .rechercher{
+        font-size: 13px;
+    }
+
+    .rechercher {
+        padding:12px 14px 12px 14px;
+        border-radius: 10px;
+        position: relative;
+        right: 12px;
+    }
+
 
     .filtres h3 {
         font-size: medium;
@@ -821,19 +812,21 @@ footer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: flex-start;
         align-items: flex-start;
         width: 100%;
-        margin: 0 0 8px 0;
+        margin: 0 5px 10px 0;
         text-align: left;
 
     }
-    #eco, #rom, #anim, #fam{
-        margin: 5px;
-        padding: 8px 12px 8px 12px;
+    #eco, #anim,#rom, #fam{
+        margin: 4px;
+        padding: 10px 12px 10px 12px;
         
     }
+
     .economique,.romantique,.animaux,.familial {
-        font-size: 12px;
+        font-size: 13px;
         position: relative;
         left:7px;
     }
@@ -843,25 +836,26 @@ footer {
     .fa-male {
         padding:10px 12px 10px 12px;
         position: absolute;
-        bottom:3px;
+        bottom:1px;
         font-size: small;
     }
 
     .fa-money-bill-wave,.fa-heart,.fa-dog {
-        padding: 9px 8px 9px 8px;
-        border-radius: 35px;
+        padding: 12px 7px 12px 7px;
+        border-radius: 20px;
         position: absolute;
-        bottom:3px;
-        font-size: small;
+        bottom:1px;
     }
 
     .info {
-        margin-top: 5px;
+        margin-top: 10px;
+        font-size: small;
+        text-align: left;
     }
     
     
     .fa-info{
-        padding:3px 5px 3px 5px;
+        padding:3px 8px 3px 8px;
         border-radius: 10px;
     }
 
@@ -874,32 +868,26 @@ footer {
         padding: 5px;
     }
 
-    .LesPlusPopulaires {
-        text-align: left;
-        }
-
+    
     
         .pop{
             text-align: left;
-            margin-left: 1px;
-        }
+            margin:20px 30px 0 30px;
 
-        .pop>.fa-star {
-            margin-top:50px;
         }
 
     
 
     .populaires img {
-        margin: 1px;
-        height: 150px;
-        width: 40%;
+
+        height: 170px;
+        width: 160px;
         border: 2px solid white;
         
     }
 
     .hotel-le-soleil-du-matin, .au-coeur, .hotel-tout-bleu-et-blanc {
-        border: 1px solid white;
+        border: 3px solid white;
         width: 100%;
 
         

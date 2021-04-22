@@ -207,19 +207,13 @@ input {
 /*etoiles */
 
 .etoiles {
-    margin-left: 10px;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 4px;
+    margin: 0 0 4px 10px;
     padding: 0;
     line-height: 20px;
 }
 
 .etoilesP{
-    margin-top:45px;
-    margin-left:10px;
-    margin-right:0;
-    margin-bottom:4px;
+    margin: 45px 0 4px 10px;
 }
 
 
@@ -334,7 +328,7 @@ input {
 
 /*div populaire*/
 
-.hotel-le-soleil-du-matin, .au-coeur, .hotel-tout-bleu-et-blanc {
+.hotel-le-soleil-du-matin, .au-coeur, .hotel-bleu-blanc {
     background-color: white;
     border: 3px solid white;
     display: flex;
@@ -491,7 +485,7 @@ footer {
 
     #logo {
         height:100px;
-        width: 100px;
+        width: 120px;
         margin:0 0 0 5px;
         padding:0;
     }
@@ -512,7 +506,9 @@ footer {
     .I {
         display: block;
         visibility: visible;
+        color: #0065FC;
         margin: 0 5px 0 0;
+        font-weight: bold;
     }
 
     header {
@@ -520,6 +516,7 @@ footer {
         flex:100%;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         margin-bottom: 50px;
     }
 
@@ -531,7 +528,7 @@ footer {
     ul li {
         display: flex;
         flex-direction: row;
-        margin: 0;
+        margin: 0px;
     }
 
     .lienA {
@@ -541,7 +538,7 @@ footer {
 
     .lienA:hover {
         border-bottom:1px solid #0065FC;
-        padding: 0 150px 10px 150px;
+        padding: 0 165px 10px 165px;
 
     }
 
@@ -666,7 +663,7 @@ footer {
                             }
                             
 
-                            .hotel-le-soleil-du-matin, .au-coeur, .hotel-tout-bleu-et-blanc {
+                            .hotel-le-soleil-du-matin, .au-coeur, .hotel-bleu-blanc {
                                 border: 10px solid white;
                                 margin:0 0 15px 0;
                                
@@ -727,14 +724,14 @@ footer {
 
             }
 
-
-    }
+}
+    
 
 
     
 /*Contenu pour un écran de 736px de largeur comme un  Iphone8 Plus par exemple*/
-@media screen and (max-width: 736px)
-{
+@media screen and (max-width: 736px) {
+
     body {
         font-size: 15px;
     }
@@ -754,22 +751,24 @@ footer {
     }
     
     .lienH{
-        padding: 0 40px 5px 80px;
+        padding: 0 60px 10px 60px;
     }
 
     .lienH:hover {
-        padding: 0 40px 5px 80px;
+        padding: 0 40px 10px 40px;
     }
 
     .lienA{
-        padding:0 80px 5px 50px;
-
+        padding:0 64px 10px 64px;
     }
+    
 
     .lienA:hover {
-        padding:0 80px 5px 50px;
+        padding:0 64px 10px 64px;
 
     }
+    
+    
 
     .BoxCR {
         text-align: center;
@@ -886,7 +885,7 @@ footer {
         
     }
 
-    .hotel-le-soleil-du-matin, .au-coeur, .hotel-tout-bleu-et-blanc {
+    .hotel-le-soleil-du-matin, .au-coeur, .hotel-bleu-blanc {
         border: 3px solid white;
         width: 100%;
     }
@@ -944,6 +943,7 @@ footer {
 
 }
 
+    
 
 
 

@@ -10,34 +10,46 @@ body {
 }
 
 .Hautpage {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    /*justify-content: space-between;*/
-    align-items: center;
 
-
+   display: flex;
+   align-items: center;
     border: 5px solid rgb(0, 255, 255);
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
-#logo {
-    width:200px;
-    height: 100px;
-    padding: 5px;
-    margin-bottom: 5px;
-    align-self: flex-start;
+.lienH a{
+    margin-left: 800px;
+}
 
-
-
-    border:1px solid red;
+.lienH a, .lienA a, .lienI a {
+    margin-right: 80px;
 }
 
 
 
 
-.lienH a{
+.Hautpage #logo {
+    width:150px;
+    height: 100px;
+    margin-right: 20px;
+
+
+    border:3px solid red;
+}
+
+
+nav, .lienI {
+    border: 3px solid black;
+  
+}
+
+
+.lienH a, .lienI a, .lienA a{
    text-decoration: none;
 }
 
@@ -50,21 +62,15 @@ body {
 
 
 .lienA a {
-    text-decoration: none;
     color: black;
 }
 
 .lienI {
     color: #0065FC;
     font-weight: bold;
+   
 }
 
-
-
-
-nav {
-   margin: 70px;
-}
 
 
 .fa-map-marker-alt {
@@ -496,41 +502,44 @@ footer {
     
         display: flex;
         flex-direction:row;
+        flex-wrap: wrap;
         margin-bottom: 50px;
     }
 
-    .lienI {
-        display:none;
-        visibility: hidden;
+    #logo, .lienI a {
+        margin-bottom: 15px;
     }
 
-    .I {
-        display: block;
-        visibility: visible;
-        color: #0065FC;
-        margin: 0 20px 0 0;
-        font-weight: bold;
+    #logo {
+        order:0;
+        width:30%;
+       
     }
 
-    header {
-        display: flex;
-        flex:100%;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 50px;
+    nav{
+        order:2;
+        width: 100%;
     }
 
-    ul {
-        padding:0;
+    .lienI a {
+        order:1;
+        width:70%;
+        margin-top:0px;
+        margin-right: 0px;
+        margin-left:500px;
+        
+    }
+    
+
+    .lienA a, .lienH a {
         margin:0;
     }
 
-    ul li {
-        display: flex;
-        flex-direction: row;
-        margin: 0px;
+    .lienH a, .lienA a {
+        flex:50%;
     }
+
+    
 
     .lienA {
         border-bottom:1px solid #f2f2f2;
@@ -555,6 +564,8 @@ footer {
         border-bottom: 1px solid #0065FC;
         padding:0 150px 10px 150px;
     }
+
+    
 
 
     .fa-map-marker-alt {

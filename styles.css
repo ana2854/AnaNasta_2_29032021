@@ -13,6 +13,9 @@ body {
 
    display: flex;
    align-items: center;
+
+
+
     border: 5px solid rgb(0, 255, 255);
 }
 
@@ -22,11 +25,11 @@ nav {
     justify-content: space-between;
 }
 
-.lienH a{
+.lienH {
     margin-left: 800px;
 }
 
-.lienH a, .lienA a, .lienI a {
+.lienH , .lienA , .lienI {
     margin-right: 80px;
 }
 
@@ -43,10 +46,6 @@ nav {
 }
 
 
-nav, .lienI {
-    border: 3px solid black;
-  
-}
 
 
 .lienH a, .lienI a, .lienA a{
@@ -57,7 +56,7 @@ nav, .lienI {
 .lienH:hover {
     border-top: 2px solid #0065FC;
     border-bottom: 1px solid transparent;
-    padding: 70px 30px 0 30px;
+    padding: 10px 30px 0 30px;
 }
 
 
@@ -503,6 +502,7 @@ footer {
         display: flex;
         flex-direction:row;
         flex-wrap: wrap;
+        justify-content: space-between;
         margin-bottom: 50px;
     }
 
@@ -512,31 +512,24 @@ footer {
 
     #logo {
         order:0;
-        width:30%;
        
     }
 
     nav{
         order:2;
-        width: 100%;
+
     }
 
-    .lienI a {
+    .lienI  {
         order:1;
-        width:70%;
-        margin-top:0px;
-        margin-right: 0px;
-        margin-left:500px;
+      
+        margin:0;
         
     }
     
 
-    .lienA a, .lienH a {
+    .lienH , .lienA  {
         margin:0;
-    }
-
-    .lienH a, .lienA a {
-        flex:50%;
     }
 
     
@@ -548,13 +541,13 @@ footer {
 
     .lienA:hover {
         border-bottom:1px solid #0065FC;
-        padding: 0 165px 10px 165px;
+        padding: 0 150px 10px 150px;
 
     }
 
     .lienH {
         border-bottom: 1px solid #f2f2f2;
-        padding:0 150px 10px 150px;
+        padding:0 145px 10px 145px;
 
     }
     
@@ -562,7 +555,7 @@ footer {
     .lienH:hover {
         border-top: none;
         border-bottom: 1px solid #0065FC;
-        padding:0 150px 10px 150px;
+        padding:0 145px 10px 145px;
     }
 
     
@@ -751,32 +744,40 @@ footer {
     #logo {
         height:50px;
         width: 80px;
+        margin-right: 0;
     }
 
+    
     .Hautpage {
         margin-bottom: 30px;
       
     }
 
+    #logo, .lienI a {
+        margin-bottom: 5px;
+    }
+
     header{
         margin-bottom: 30px;
     }
+
+    
     
     .lienH{
-        padding: 0 60px 10px 60px;
+        padding: 0 57px 10px 57px;
     }
 
     .lienH:hover {
-        padding: 0 40px 10px 40px;
+        padding: 0 56px 10px 56px;
     }
 
     .lienA{
-        padding:0 64px 10px 64px;
+        padding:0 62px 10px 62px;
     }
     
 
     .lienA:hover {
-        padding:0 64px 10px 64px;
+        padding:0 62px 10px 62px;
 
     }
     

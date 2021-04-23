@@ -13,8 +13,12 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
+    /*justify-content: space-between;*/
     align-items: center;
+
+
+    border: 5px solid rgb(0, 255, 255);
 }
 
 
@@ -23,14 +27,14 @@ body {
     height: 100px;
     padding: 5px;
     margin-bottom: 5px;
+    align-self: flex-start;
+
+
+
+    border:1px solid red;
 }
 
-nav ul
-{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row; 
-}
+
 
 
 .lienH a{
@@ -55,14 +59,10 @@ nav ul
     font-weight: bold;
 }
 
-.I {
-    display: none;
-    visibility: hidden;
-}
 
 
 
-nav li {
+nav {
    margin: 70px;
 }
 
@@ -239,7 +239,8 @@ input {
     margin-bottom: 10px;
 }
 
-.auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina,.vieux-port, .parc-national-des-calanques, .fort-de-promegues, .iles-du-frioul, .notre-dame-de-la-garde, .parc-longchamps, 
+.auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina,.vieux-port,
+.parc-national-des-calanques,.fort-de-promegues, .iles-du-frioul, .notre-dame-de-la-garde, .parc-longchamps, 
 .hotel-le-soleil-du-matin, .au-coeur, .hotel-bleu-blanc {
     background-color: white;
     border-radius: 25px;

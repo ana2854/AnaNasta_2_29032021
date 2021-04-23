@@ -227,20 +227,39 @@ input {
 
 }
 
+.hebergements img,.ActivitesMarseille img, .colonneA1 img, .colonneA2 img,.populaires img {
+    object-fit: cover;
+}
+.hebergements img, .ActivitesMarseille img, .colonneA1 img, .colonneA2 img {
+    border-radius:25px 25px 0 0;
+    width: 100%;
+}
+
 .HebergementsMarseille h2, .ActivitesMarseille h2, .LesPlusPopulaires h2 {
     margin-bottom: 10px;
 }
 
-
-.HebergementsMarseille,.LesPlusPopulaires {
-    padding: 10px;
-    width: 60%;
-    background-color: #f2f2f2;
-    margin: 0px 15px 10px 0;
-    border-radius: 30px;
+.auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina,.vieux-port, .parc-national-des-calanques, .fort-de-promegues, .iles-du-frioul, .notre-dame-de-la-garde, .parc-longchamps, 
+.hotel-le-soleil-du-matin, .au-coeur, .hotel-bleu-blanc {
+    background-color: white;
+    border-radius: 25px;
+    margin: 14px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
 }
 
 
+
+.HebergementsMarseille,.LesPlusPopulaires {
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+}
+
+.HebergementsMarseille {
+    width: 60%;
+    margin: 0px 15px 10px 0;
+}
 .LesPlusPopulaires {
     width:35%;
     margin: 0px 0 10px 15px;
@@ -268,24 +287,19 @@ input {
 /*div hebergements*/
 
 .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
-    background-color: white;
     border: 5px solid white;
-    overflow: hidden;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin:14px;
     width:30%;
    
 }
 
-/*hebergements images*/
+
 
 .hebergements img {
-    border-radius:25px 25px 0 0;
-    width: 100%;
     height: 130px;
-    object-fit: cover;
+
 }
+
+
 
 .afficherplus {
 
@@ -317,10 +331,10 @@ input {
 .populaires {
     display: flex;
     flex-direction:column;
+    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     overflow: hidden;
-    align-content:space-around;
     padding: 10px;
 
 
@@ -329,15 +343,10 @@ input {
 /*div populaire*/
 
 .hotel-le-soleil-du-matin, .au-coeur, .hotel-bleu-blanc {
-    background-color: white;
     border: 3px solid white;
     display: flex;
     flex-direction: row;
-    overflow: hidden;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 90%;
-    margin:14px;
 }
 
 /*images pop*/
@@ -347,7 +356,6 @@ input {
     border: 2px solid white;
     width: 120px;
     height: 110px;
-    object-fit: cover;
 
 }
 
@@ -358,7 +366,6 @@ input {
 
 .ActivitesMarseille>h2{
     flex: 100%;
-    margin-bottom: 10px;
 }
 
 .ActivitesMarseille h4 {
@@ -378,6 +385,10 @@ input {
     
 }
 
+.vieux-port,.parc-national-des-calanques {
+    width:22%;
+}
+
 .colonneA1, .colonneA2{
     display: flex;
     flex-wrap: wrap;
@@ -387,29 +398,20 @@ input {
 
 }
 
-
-.ActivitesMarseille img, .colonneA1 img, .colonneA2 img {
-    border-radius:25px 25px 0 0;
-    object-fit: cover;
-    width: 100%;
+.fort-de-promegues,.iles-du-frioul,.notre-dame-de-la-garde,.parc-longchamps{
+    width:100%;
 }
 
-.vieux-port, .parc-national-des-calanques, .fort-de-promegues, .iles-du-frioul, .notre-dame-de-la-garde, .parc-longchamps {
-    border-radius: 25px;
-    margin-bottom: 10px;
-    background-color: white;
 
+
+.vieux-port, .parc-national-des-calanques, .fort-de-promegues, .iles-du-frioul, .notre-dame-de-la-garde, .parc-longchamps {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    overflow: hidden;
-    
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
 
 .vieux-port,  .parc-national-des-calanques {
-    width: 22%;
     height: 430px;
 
 }
@@ -420,7 +422,6 @@ input {
 
 
 .fort-de-promegues {
-    width: 100%;
     height: 250px;
 
 }
@@ -431,8 +432,6 @@ input {
 }
 
 .iles-du-frioul {
-
-    width: 100%;
     height: 150px;
 
 }
@@ -443,8 +442,6 @@ input {
 }
 
 .notre-dame-de-la-garde, .parc-longchamps {
-
-    width: 100%;
     height: 200px;
 
 }
@@ -462,6 +459,9 @@ footer {
     justify-content: space-around;
     margin-top: 50px;
 }
+
+
+
 
  
 @media screen and (max-width: 1024px) {
@@ -943,7 +943,7 @@ footer {
 
 }
 
-    
+
 
 
 

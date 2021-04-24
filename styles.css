@@ -16,7 +16,6 @@ body {
 
 
 
-    border: 5px solid rgb(0, 255, 255);
 }
 
 nav {
@@ -41,8 +40,6 @@ nav {
     height: 130px;
     margin-right: 10px;
 
-
-    border:3px solid red;
 }
 
 
@@ -243,7 +240,7 @@ input {
 }
 
 .HebergementsMarseille h2, .ActivitesMarseille h2, .LesPlusPopulaires h2 {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina,.vieux-port,
@@ -476,6 +473,7 @@ footer {
 
     * {
         box-sizing: border-box;
+        background-color: teal;
     }
 
     body {
@@ -519,39 +517,41 @@ footer {
     }
 
     .lienI  {
-        order:1;
-        
+        order:1;  
     }
     
-
     nav{
         order:2;
     }
 
     .Hautpage img, .lienI a {
-        margin-bottom: 15px;
+        margin-bottom: 30px;
     }
 
     .lienA  {
-        border-bottom:3px solid #c50707;
+        border-bottom:1px solid grey;
         padding: 0 135px 10px 135px;
     }
 
-    .lienA a:hover {
-        border-bottom:5px solid #0065FC;
+    .lienA:hover {
+        border-bottom:1px solid #0065FC;
+        padding: 0 135px 10px 135px
     }
 
     .lienH {
-        /*border-bottom: 1px solid #f2f2f2;*/
-        border-bottom: 3px solid green;
+        border-bottom:1px solid grey;
         padding:0 135px 10px 135px;
 
     }
+
+    .lienH a:hover{
+         border-top: none;
+    }
     
 
-    .lienH a:hover {
-        border-top: none;
-        border-bottom: 5px solid #0065FC;
+    .lienH:hover {
+        border-bottom: 1px solid #0065FC;
+        padding:0 135px 10px 135px;
     }
 
     
@@ -685,7 +685,7 @@ footer {
 
         .hebergements img {
             width: 100%;
-            height: 300px;
+            height: 250px;
 
         }
 
@@ -745,7 +745,7 @@ footer {
 
     
     .Hautpage {
-        margin-bottom: 40px;
+        margin-bottom: 50px;
       
     }
 
@@ -753,10 +753,7 @@ footer {
         margin-bottom: 5px;
     }
 
-    header{
-        margin-bottom: 30px;
-    }
-
+   
     
     
     .lienH{
@@ -806,7 +803,7 @@ footer {
 
 
     .ChampsRecherche2, input, .rechercher{
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .rechercher {
@@ -839,7 +836,7 @@ footer {
     }
 
     .economique,.romantique,.animaux,.familial {
-        font-size: 13px;
+        font-size: 14px;
         position: relative;
         left:7px;
     }
@@ -886,13 +883,14 @@ footer {
 
         }
 
-    .populaires img {
+    .populaires img{
 
         height: 170px;
         width: 160px;
         border: 2px solid white;
         
     }
+
 
     .hotel-le-soleil-du-matin, .au-coeur, .hotel-bleu-blanc {
         border: 3px solid white;
@@ -910,7 +908,7 @@ footer {
 
     .hebergements img {
         width:100%;
-        height:120px;
+        height:130px;
         border-radius:20px 20px 0 0; 
     }
 
@@ -949,6 +947,89 @@ footer {
         height: 200px;
        
     }
+
+}
+
+
+@media screen and (max-width:667px) {
+    body {
+        font-size: 13px;
+        background-color: rgb(243, 62, 62);
+    }
+
+    .Hautpage img{
+       height:70px;
+       width: 70px;
+    }
+
+    .Hautpage img, .lienI {
+        margin-bottom: 30px;
+    }
+
+    .Hautpage {
+        margin-bottom: 30px;
+    }
+
+    .lienH {
+        padding: 0 20px 10px 20px;
+    }
+
+    .lienH:hover {
+        padding: 0 20px 10px 20px;
+    }
+
+    .lienA {
+        padding: 0 55px 0 55px;
+    }
+
+    .lienA:hover {
+        padding: 0 55px 0 55px;
+    }
+
+    .fa-map-marker-alt {
+        padding: 11px 15px 11px 15px;
+    }
+
+    input {
+        padding: 8px 130px 8px 2px;
+    }
+
+    .ChampsRecherche2 {
+        margin: 10px 0 10px 0;
+    }
+
+    .ChampsRecherche2, input, .rechercher {
+        font-size: 13px;
+    }
+
+    .rechercher {
+        padding: 9px 12px 9px 12px;
+        position: relative;
+        right: 15px;
+    }
+
+    .filtres {
+        margin: 15px 0 15px 0;
+    }
+
+    #eco, #anim, #rom, #fam {
+        padding: 7px 12px 7px 10px;
+    }
+
+    .economique, .romantique, .animaux, .familial {
+        font-size:13px;
+    }
+
+    .fa-money-bill-wave,.fa-heart, .fa-dog {
+        padding: 11px 6px 11px 6px;
+        font-size: small;
+    }
+
+    .fa-info {
+        padding: 3px 7px 3px;
+
+    }
+
 
 }
 

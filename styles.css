@@ -14,8 +14,6 @@ body {
    display: flex;
    align-items: center;
 
-
-
 }
 
 nav {
@@ -33,16 +31,12 @@ nav {
 }
 
 
-
-
 .Hautpage img {
     width:130px;
     height: 130px;
     margin-right: 10px;
 
 }
-
-
 
 
 .lienH a, .lienI a, .lienA a{
@@ -68,7 +62,6 @@ nav {
     font-weight: bold;
    
 }
-
 
 
 .fa-map-marker-alt {
@@ -142,8 +135,6 @@ input {
     z-index: 2;
 }
 
-
-
 #eco, #fam, #rom, #anim {
     margin: 10px;
     padding: 10px 40px 10px 40px;
@@ -169,7 +160,6 @@ input {
     font-weight: bold;
 }
 
-/*info*/
 
 .info {
     margin: 30px;
@@ -183,7 +173,6 @@ input {
     border-radius: 20px;
 }
 
-/*etoile*/
 
 .fa-star {
     color:#0065FC;
@@ -194,13 +183,11 @@ input {
     color: #b6b6b0;
 }
 
-/*logo fleche*/
 
 .fa-chart-line {
     font-size: 20px;
 }
 
-/*paragraphes, heading */
 
 .hebergements p, .hebergements h4, .populaires p, .populaires h4 {
     margin: 2px 0 0 10px;
@@ -208,7 +195,6 @@ input {
     line-height: 20px;
 }
 
-/*etoiles */
 
 .etoiles {
     margin: 0 0 4px 10px;
@@ -220,8 +206,6 @@ input {
     margin: 45px 0 4px 10px;
 }
 
-
-/*Grande boite*/
 
 .BoxHP {
     display: flex;
@@ -282,14 +266,11 @@ input {
    
 }
 
-
 .hebergements a {
     text-decoration: none;
     color:black;
     font-weight: bold;
 }
-
-/*div hebergements*/
 
 .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
     border: 5px solid white;
@@ -297,24 +278,16 @@ input {
    
 }
 
-
-
 .hebergements img {
     height: 130px;
 
 }
-
-
 
 .afficherplus {
 
     margin:50px 0 20px 0;
     padding:20px;
 }
-
-/*Fin hebergements*/
-
-/*section populaire*/
 
 .titreP{
     display: flex;
@@ -330,9 +303,6 @@ input {
 }
 
 
-
-/*petite boite populaire*/
-
 .populaires {
     display: flex;
     flex-direction:column;
@@ -345,7 +315,6 @@ input {
 
 }
 
-/*div populaire*/
 
 .hotel-le-soleil-du-matin, .au-coeur, .hotel-bleu-blanc {
     border: 3px solid white;
@@ -354,7 +323,7 @@ input {
     width: 90%;
 }
 
-/*images pop*/
+
 
 .populaires img {
     border-radius:25px 0 0 30px;
@@ -364,11 +333,6 @@ input {
 
 }
 
-
-/*Activites */
-
-
-
 .ActivitesMarseille>h2{
     flex: 100%;
 }
@@ -376,7 +340,6 @@ input {
 .ActivitesMarseille h4 {
     margin:15px 0 5px 15px;
 }
-
 
 
 .ActivitesMarseille{
@@ -390,7 +353,7 @@ input {
     
 }
 
-.vieux-port,.parc-national-des-calanques {
+.vieux-port,.parc-national-des-calanques, .colonneA1, .colonneA2{
     width:22%;
 }
 
@@ -399,7 +362,6 @@ input {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    width: 22%;
 
 }
 
@@ -473,7 +435,6 @@ footer {
 
     * {
         box-sizing: border-box;
-        background-color: teal;
     }
 
     body {
@@ -554,8 +515,6 @@ footer {
         padding:0 135px 10px 135px;
     }
 
-    
-
 
     .fa-map-marker-alt {
         padding: 18px;
@@ -632,61 +591,64 @@ footer {
         flex-direction: column;
     }
 
-                        .LesPlusPopulaires {
-                            text-align: left;
-                            order:0;
-                            }
+    .LesPlusPopulaires {
+    text-align: left;
+    order:0;
+    }
 
-                            .titreP {
-                                margin-top:20px;
-                            }
+    .titreP {
+        margin-top:20px;
+    }
 
-                            .pop{
+    .pop{
 
-                                margin: 60px 0 0 10px;
-                            }
+        margin: 60px 0 0 10px;
+    }
 
-                            .etoileP {
-                                margin: 50px 0 5px 0;
-                            }
+    .etoileP {
+        margin: 50px 0 5px 0;
+    }
+    
+
+    .populaires img {
+        width: 40%;
+        height: 280px;
+        margin: 0;
+    } 
+    
+    .fa-chart-line {
+        font-size: 25px;
+        padding: 10px;
+    }
+    
+
+    .hotel-le-soleil-du-matin, .au-coeur, .hotel-bleu-blanc {
+        border: 10px solid white;
+        margin:0 0 15px 0;
+       
+    }
+    
                             
 
-                            .populaires img {
-                                width: 40%;
-                                height: 280px;
-                                margin: 0;
-                            }
-                            
+    .HebergementsMarseille {
+    order:1;
+    background-color: white;
+     }      
+     
+     .hebergements img ,.auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina, .colonneA1,
+     .colonneA2, .vieux-port,.parc-national-des-calanques,.parc-longchamps,.notre-dame-de-la-garde,.fort-de-promegues,.iles-du-frioul,
+     .vieux-port img,.notre-dame-de-la-garde img, .parc-longchamps img,  .iles-du-frioul img,.fort-de-promegues img, .parc-national-des-calanques img   {
+           width:100%;
+     }
 
-                            .fa-chart-line {
-                                font-size: 25px;
-                                padding: 10px;
-                            }
-                            
-
-                            .hotel-le-soleil-du-matin, .au-coeur, .hotel-bleu-blanc {
-                                border: 10px solid white;
-                                margin:0 0 15px 0;
-                               
-                            }
-                            
-
-         .HebergementsMarseille {
-             order:1;
-             background-color: white;
-             }                                                
-
-        .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
+    .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
            
             border: 10px solid white;
-            width: 100%;
             margin:0 0 15px 0;
         }
 
         .hebergements img {
-            width: 100%;
             height: 250px;
-
         }
 
         .afficherplus {
@@ -694,14 +656,11 @@ footer {
         }
 
 
-                    .colonneA1, .colonneA2 {
-                        width: 100%;
-                    }
 
                     /*ipad*/
                     /*div activites*/
                     .vieux-port,.parc-national-des-calanques,.parc-longchamps,.notre-dame-de-la-garde,.fort-de-promegues,.iles-du-frioul {
-                        width: 100%;
+        
                         height:330px;
                         margin:0 0 15px 0;
                     }
@@ -710,8 +669,6 @@ footer {
                     /* img activites*/
                     .vieux-port img,.notre-dame-de-la-garde img, .parc-longchamps img,  .iles-du-frioul img,.fort-de-promegues img, .parc-national-des-calanques img {
                     
-
-                        width: 100%;
                         height: 280px;
                     }
 
@@ -752,9 +709,6 @@ footer {
     .Hautpage img, .lienI a {
         margin-bottom: 5px;
     }
-
-   
-    
     
     .lienH{
         padding: 0 26px 10px 26px;
@@ -765,15 +719,14 @@ footer {
     }
 
     .lienA{
-        padding:0 66px 10px 66px;
+        padding:0 70px 10px 70px;
+        
     }
     
-
     .lienA:hover {
-        padding:0 66px 10px 66px;
+        padding:0 70px 10px 70px;
 
     }
-    
     
 
     .BoxCR {
@@ -954,7 +907,6 @@ footer {
 @media screen and (max-width:667px) {
     body {
         font-size: 13px;
-        background-color: rgb(243, 62, 62);
     }
 
     .Hautpage img{

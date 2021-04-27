@@ -12,7 +12,7 @@ body {
 
 .wrapper {
     margin: 0 1%;
-    max-width:2000px;
+    background-color: powderblue;
 }
 
 .Hautpage {
@@ -252,6 +252,10 @@ input {
 }
 
 
+.vieux-port,.parc-national-des-calanques,.fort-de-promegues, .iles-du-frioul, .notre-dame-de-la-garde, .parc-longchamps {
+    margin:0;
+}
+
 
 .HebergementsMarseille,.LesPlusPopulaires {
     padding: 10px;
@@ -362,8 +366,11 @@ input {
     flex-wrap: wrap;
     justify-content:space-between;
     align-content:center;
-    padding: 20px;
+    /*padding: 20px;*/
     width: 100%;
+
+
+    border: 5px solid yellow;
     
 }
 
@@ -377,6 +384,9 @@ input {
     flex-direction: column;
     justify-content: space-between;
 
+
+
+    border: 4px solid orangered;
 }
 
 .fort-de-promegues,.iles-du-frioul,.notre-dame-de-la-garde,.parc-longchamps{
@@ -443,7 +453,7 @@ footer {
 
 
 
-
+/*
  
 @media screen and (max-width: 1024px) {
 
@@ -678,8 +688,7 @@ footer {
 
 
 
-                    /*ipad*/
-                    /*div activites*/
+                   
                     .vieux-port,.parc-national-des-calanques,.parc-longchamps,.notre-dame-de-la-garde,.fort-de-promegues,.iles-du-frioul {
         
                         height:330px;
@@ -687,7 +696,7 @@ footer {
                     }
 
 
-                    /* img activites*/
+                  
                     .vieux-port img,.notre-dame-de-la-garde img, .parc-longchamps img,  .iles-du-frioul img,.fort-de-promegues img, .parc-national-des-calanques img {
                     
                         height: 280px;
@@ -708,7 +717,7 @@ footer {
 
 
     
-/*Contenu pour un écran de 736px de largeur comme un  Iphone8 Plus par exemple*/
+
 @media screen and (max-width: 736px) {
 
     body {
@@ -1009,7 +1018,7 @@ footer {
 
 
 
-
+*/
 
 
             

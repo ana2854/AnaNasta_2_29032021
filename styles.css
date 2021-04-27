@@ -519,7 +519,7 @@ footer {
 
     }
 
-    .lienH a:hover{
+    .lienH a:hover, .lienA a:hover{
          border-top: none;
     }
     

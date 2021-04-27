@@ -489,9 +489,10 @@ footer {
 
     * {
         box-sizing: border-box;
+    
     }
 
-    .wrapper {
+    .wrapper, footer {
         max-width: 1024px;
         margin: 0 auto;
         
@@ -551,17 +552,17 @@ footer {
 
     .lienA  {
         border-bottom:1px solid grey;
-        padding: 0 135px 10px 135px;
+        padding: 0 120px 10px 120px;
     }
 
     .lienA:hover {
         border-bottom:1px solid #0065FC;
-        padding: 0 135px 10px 135px
+        padding: 0 120px 10px 120px
     }
 
     .lienH {
         border-bottom:1px solid grey;
-        padding:0 135px 10px 135px;
+        padding:0 120px 10px 120px;
 
     }
 
@@ -572,7 +573,7 @@ footer {
 
     .lienH:hover {
         border-bottom: 1px solid #0065FC;
-        padding:0 135px 10px 135px;
+        padding:0 120px 10px 120px;
     }
 
 
@@ -719,17 +720,17 @@ footer {
 
 
                    
-                    .vieux-port,.parc-national-des-calanques,.parc-longchamps,.notre-dame-de-la-garde,.fort-de-promegues,.iles-du-frioul {
+        .vieux-port,.parc-national-des-calanques,.parc-longchamps,.notre-dame-de-la-garde,.fort-de-promegues,.iles-du-frioul {
         
-                        height:330px;
-                        margin:0 0 15px 0;
+        height:330px;
+        margin:0 0 15px 0;
                     }
 
 
                   
-                    .vieux-port img,.notre-dame-de-la-garde img, .parc-longchamps img,  .iles-du-frioul img,.fort-de-promegues img, .parc-national-des-calanques img {
+        .vieux-port img,.notre-dame-de-la-garde img, .parc-longchamps img,  .iles-du-frioul img,.fort-de-promegues img, .parc-national-des-calanques img {
                     
-                        height: 280px;
+        height: 280px;
                     }
 
         footer{

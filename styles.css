@@ -241,7 +241,6 @@ input {
 .HebergementsMarseille h2 {
     border: 2px solid green;
     padding: 15px;
-    color: red;
 }
 
 .titreP {
@@ -353,6 +352,7 @@ input {
     flex-direction:column;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     overflow: hidden;
 
@@ -483,7 +483,7 @@ footer {
 
 
 
-/*
+
  
 @media screen and (max-width: 1024px) {
 
@@ -491,13 +491,13 @@ footer {
         box-sizing: border-box;
     }
 
-    body {
-        width:100%;
-        box-sizing: border-box;
-        font-size: 15px;
-        flex-wrap: wrap;
-        margin:4%;
+    .wrapper {
+        max-width: 1024px;
+        margin: 0 auto;
+        
     }
+
+   
 
     .hebergements p, .hebergements h4, .populaires p, .populaires h4, .ActivitesMarseille h4 {
         line-height: 22px;
@@ -650,10 +650,10 @@ footer {
 
         display: flex;
         flex-direction: column;
+       
     }
 
     .LesPlusPopulaires {
-    text-align: left;
     order:0;
     }
 
@@ -745,7 +745,7 @@ footer {
 }
     
 
-
+/*
     
 
 @media screen and (max-width: 736px) {

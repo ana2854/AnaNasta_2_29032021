@@ -237,10 +237,6 @@ input {
     width: 100%;
 }
 
-.ActivitesMarseille h2 {
-    margin-bottom: 15px;
-}
-
 
 .HebergementsMarseille h2 {
     border: 2px solid green;
@@ -248,9 +244,15 @@ input {
     color: red;
 }
 
-.HebergementsMarseille h2, .populaires h2 {
-    margin: 0px;
+.titreP {
+    margin: 15px;
 }
+
+.ActivitesMarseille h2 {
+    margin-bottom: 15px;
+}
+
+
 
 .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina,
 .hotel-le-soleil-du-matin, .au-coeur, .hotel-bleu-blanc {
@@ -275,30 +277,37 @@ input {
 
 
 .HebergementsMarseille,.LesPlusPopulaires {
-    padding: 20px;
+    padding: 15px;
     border-radius: 30px;
     background-color: #f2f2f2;
 }
+
+.afficherplus {
+    padding:15px;
+    margin:10px 0 10px 0;
+        
+    }
+
 
 .HebergementsMarseille {
     width: 60%;
     margin: 0px 20px 10px 0;
 }
 .LesPlusPopulaires {
-    width:35%;
+    width:37%;
     margin: 0px 0 10px 20px;
 }
 
 
 .hebergements {
-    display: flex;
+    display: flex; 
     flex-direction: row;
     justify-content:center;
     align-content: space-between;
     overflow: hidden;
     flex-wrap: wrap;
    
-   
+   border: 3px solid grey;
 }
 
 .hebergements a {
@@ -318,11 +327,7 @@ input {
 
 }
 
-.afficherplus {
 
-    margin:20px;
-    padding:20px 0 50px 0;
-}
 
 .titreP{
     display: flex;
@@ -653,7 +658,7 @@ footer {
     }
 
     .titreP {
-        margin-top:20px;
+        margin:20px 0 0 0;
     }
 
     .pop{
@@ -878,7 +883,7 @@ footer {
     }
 
     .titreP{
-        margin-bottom: 10px;
+        margin: 0 0 10px 0;
     }
 
     .fa-chart-line {
@@ -921,7 +926,7 @@ footer {
     }
 
     .afficherplus {
-        margin-top: 2px;
+        margin: 2px 0 0 0;
     }
 
     .titreH {

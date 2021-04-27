@@ -746,13 +746,18 @@ footer {
 }
     
 
-/*
+
     
 
 @media screen and (max-width: 736px) {
 
     body {
         font-size: 16px;
+    }
+
+    .wrapper, footer {
+        max-width: 736px;
+        margin: 0 auto;
     }
 
     .Hautpage img {
@@ -780,12 +785,12 @@ footer {
     }
 
     .lienA{
-        padding:0 70px 10px 70px;
+        padding:0 26px 10px 26px;
         
     }
     
     .lienA:hover {
-        padding:0 70px 10px 70px;
+        padding:0 26px 10px 26px;
 
     }
     
@@ -802,7 +807,7 @@ footer {
     }
 
     input {
-        padding:10px 170px 10px 2px;
+        padding:10px 100px 10px 2px;
     }
 
     .ChampsRecherche {
@@ -964,7 +969,7 @@ footer {
 
 }
 
-
+/*
 @media screen and (max-width:667px) {
     body {
         font-size: 15px;

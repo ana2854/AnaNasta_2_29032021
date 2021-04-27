@@ -97,7 +97,7 @@ input {
 }
 
 .rechercher {
-    background-color:#0065FC;
+    background-color:#0065fcf1;
     border:1px solid #0065FC;
     color: white;
     border-radius: 0 8px 8px 0;
@@ -264,7 +264,7 @@ input {
 .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina,.vieux-port,
 .parc-national-des-calanques,.fort-de-promegues, .iles-du-frioul, .notre-dame-de-la-garde, .parc-longchamps, 
 .hotel-le-soleil-du-matin, .au-coeur, .hotel-bleu-blanc {
-    background-color: white;
+    background-color: rgb(252, 252, 252);
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     overflow: hidden;
@@ -317,7 +317,7 @@ input {
 }
 
 .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
-    border: 5px solid white;
+    border: 5px solid rgb(253, 231, 231);
     width:30%;
    
 }
@@ -364,9 +364,12 @@ input {
 
 }
 
+.hotel-le-soleil-du-matin, .au-coeur, .hotel-bleu-blanc, .populaires img {
+    border:3px solid whitesmoke;
+}
+
 
 .hotel-le-soleil-du-matin, .au-coeur, .hotel-bleu-blanc {
-    border: 3px solid white;
     display: flex;
     flex-direction: row;
     width: 90%;
@@ -376,7 +379,6 @@ input {
 
 .populaires img {
     border-radius:25px 0 0 30px;
-    border: 2px solid white;
     width: 120px;
     height: 125px;
 
@@ -899,15 +901,15 @@ footer {
             margin:20px 30px 0 30px;
 
 
-            border:3px solid green;
+            border:1px solid green;
 
         }
 
         .etoilesP {
-            margin-top:5px;
+            margin-top:15px;
 
 
-            border: 2px solid black;
+            border: 1px solid black;
         }
 
     .populaires img{

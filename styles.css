@@ -33,6 +33,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+   
 }
 
 .lienH {
@@ -492,13 +493,16 @@ footer {
     
     }
 
+    body {
+        font-size:15px;
+    }
+
     .wrapper, footer {
         max-width: 1024px;
         margin: 0 auto;
         
     }
 
-   
 
     .hebergements p, .hebergements h4, .populaires p, .populaires h4, .ActivitesMarseille h4 {
         line-height: 22px;
@@ -520,6 +524,9 @@ footer {
         flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 50px;
+
+      
+
     }
 
     
@@ -535,45 +542,45 @@ footer {
     
     nav{
         order:2;
+        width: 100%;
+
     }
+
+    
 
     .Hautpage img, .lienI a {
         margin-bottom: 30px;
     }
     
-    .lienA, .lienH {
-        margin: 0;
-    }
+    
 
     .lienI {
         margin: 0 18px 0 0;
     }
 
-
-    .lienA  {
-        border-bottom:1px solid grey;
-        padding: 0 120px 10px 120px;
+    .lienH, .lienA{
+        margin:0;
+        flex:50%;
     }
 
-    .lienA:hover {
+
+    .lienH, .lienH:hover, .lienA, .lienA:hover {
+        padding: 0 118px 10px 118px;
+    }
+
+
+    .lienA, .lienH {
+        border-bottom:1px solid grey;
+     
+    }
+
+    .lienA:hover, .lienH:hover {
         border-bottom:1px solid #0065FC;
-        padding: 0 120px 10px 120px
-    }
-
-    .lienH {
-        border-bottom:1px solid grey;
-        padding:0 120px 10px 120px;
-
+        
     }
 
     .lienH a:hover, .lienA a:hover{
          border-top: none;
-    }
-    
-
-    .lienH:hover {
-        border-bottom: 1px solid #0065FC;
-        padding:0 120px 10px 120px;
     }
 
 
@@ -751,9 +758,15 @@ footer {
 
 @media screen and (max-width: 736px) {
 
-    body {
-        font-size: 16px;
+     body {
+        font-size: 17px;
     }
+
+    .HebergementsMarseille, .LesPlusPopulaires,.ActivitesMarseille {
+        font-size: 15px;
+    }
+
+    
 
     .wrapper, footer {
         max-width: 736px;
@@ -776,24 +789,9 @@ footer {
         margin-bottom: 5px;
     }
     
-    .lienH{
-        padding: 0 26px 10px 26px;
+    .lienH, .lienH:hover, .lienA, .lienA:hover{
+        padding: 0 24px 10px 24px;
     }
-
-    .lienH:hover {
-        padding: 0 26px 10px 26px;
-    }
-
-    .lienA{
-        padding:0 26px 10px 26px;
-        
-    }
-    
-    .lienA:hover {
-        padding:0 26px 10px 26px;
-
-    }
-    
 
     .BoxCR {
         text-align: center;
@@ -822,7 +820,7 @@ footer {
 
 
     .ChampsRecherche2, input, .rechercher{
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .rechercher {
@@ -855,29 +853,29 @@ footer {
     }
 
     .economique,.romantique,.animaux,.familial {
-        font-size: 16px;
+        font-size: 17px;
         position: relative;
-        left:7px;
+        left:11px;
     }
     
 
 
     .fa-male {
-        padding:10px 12px 10px 12px;
+        padding:10px 15px 10px 15px;
         position: absolute;
         bottom:1px;
         font-size: small;
     }
 
     .fa-money-bill-wave,.fa-heart,.fa-dog {
-        padding: 12px 7px 12px 7px;
+        padding: 12px 10px 12px 10px;
         border-radius: 20px;
         position: absolute;
         bottom:1px;
     }
 
     .info {
-        margin: 20px;
+        margin:20px 0 20px 0;
         font-size: small;
         text-align: left;
     }
@@ -900,6 +898,16 @@ footer {
             text-align: left;
             margin:20px 30px 0 30px;
 
+
+            border:3px solid green;
+
+        }
+
+        .etoilesP {
+            margin-top:5px;
+
+
+            border: 2px solid black;
         }
 
     .populaires img{
@@ -970,10 +978,20 @@ footer {
 }
 
 /*
+
+
 @media screen and (max-width:667px) {
-    body {
+   
+
+    .wrapper, footer {
+        max-width: 667px;
+        margin: 0 auto;
+    }
+
+    .HebergementsMarseille, .LesPlusPopulaires, .ActivitesMarseille {
         font-size: 15px;
     }
+
 
     .Hautpage img{
        height:70px;
@@ -988,28 +1006,19 @@ footer {
         margin-bottom: 30px;
     }
 
-    .lienH {
-        padding: 0 20px 10px 20px;
-    }
+    
 
-    .lienH:hover {
-        padding: 0 20px 10px 20px;
+    .lienH, .lienH:hover, .lienA, .lienA:hover{
+        padding: 0 5px 10px 5px;
     }
-
-    .lienA {
-        padding: 0 55px 0 55px;
-    }
-
-    .lienA:hover {
-        padding: 0 55px 0 55px;
-    }
+    
 
     .fa-map-marker-alt {
-        padding: 11px 15px 11px 15px;
+        padding: 12px 15px 12px 15px;
     }
 
     input {
-        padding: 8px 130px 8px 2px;
+        padding: 8px 50px 8px 2px;
     }
 
     .ChampsRecherche2 {
@@ -1017,7 +1026,7 @@ footer {
     }
 
     .ChampsRecherche2, input, .rechercher {
-        font-size: 13px;
+        font-size: 17px;
     }
 
     .rechercher {
@@ -1035,7 +1044,7 @@ footer {
     }
 
     .economique, .romantique, .animaux, .familial {
-        font-size:13px;
+        font-size:17px;
     }
 
     .fa-money-bill-wave,.fa-heart, .fa-dog {
@@ -1048,13 +1057,19 @@ footer {
 
     }
 
+    .pop {
+        margin:8px;
+    }
+
 
 }
 
-
-
-
 */
+
+
+
+
+
 
 
             

@@ -290,11 +290,11 @@ input {
 
 
 .HebergementsMarseille {
-    width: 60%;
+    width: 64%;
     margin: 0px 20px 10px 0;
 }
 .LesPlusPopulaires {
-    width:37%;
+    width:33%;
     margin: 0px 0 10px 20px;
 }
 
@@ -323,7 +323,7 @@ input {
 }
 
 .hebergements img {
-    height: 130px;
+    height: 125px;
 
 }
 

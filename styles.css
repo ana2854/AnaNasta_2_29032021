@@ -465,10 +465,7 @@ footer {
         padding:0;
     }
 
-    .lienI , .lienA, .lienH {
-        margin: 0;
-    }
-
+    
     .Hautpage {
     
         display: flex;
@@ -496,6 +493,15 @@ footer {
     .Hautpage img, .lienI a {
         margin-bottom: 30px;
     }
+    
+    .lienA, .lienH {
+        margin: 0;
+    }
+
+    .lienI {
+        margin: 0 18px 0 0;
+    }
+
 
     .lienA  {
         border-bottom:1px solid grey;

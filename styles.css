@@ -839,7 +839,7 @@ footer {
 
     }
     #eco, #anim,#rom, #fam{
-        margin: 5px;
+        margin: 6px;
         padding: 10px 12px 10px 12px;
         
     }
@@ -964,7 +964,7 @@ footer {
 
 }
 
-/*
+
 
 
 @media screen and (max-width:667px) {
@@ -1030,7 +1030,7 @@ footer {
     }
 
     .fa-money-bill-wave,.fa-heart, .fa-dog {
-        padding: 11px 6px 11px 6px;
+        padding: 11px 8px 11px 8px;
         font-size: small;
     }
 
@@ -1046,7 +1046,7 @@ footer {
 
 }
 
-*/
+
 
 
 

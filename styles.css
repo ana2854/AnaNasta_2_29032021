@@ -23,7 +23,7 @@ body {
 
 }
 
-.Hautpage img {
+.Logo img {
     width:130px;
     height: 130px;
     margin-right: 10px;
@@ -316,7 +316,7 @@ input {
 }
 
 .auberge-la-cannebiere, .hotel-du-port, .hotel-les-mouettes, .hotel-de-la-mer, .auberge-le-panier, .hotel-chez-amina {
-    border: 5px solid rgb(253, 231, 231);
+    border: 5px solid rgb(248, 236, 236);
     width:30%;
    
 }

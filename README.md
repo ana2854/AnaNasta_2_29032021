@@ -1,6 +1,6 @@
 # Projet Reservia
 
-![maquette version desktop](maquettes/reservia-desktop.png)
+![maquette version desktop](maquettes/version-desktop.png)
 
 
 ### Description
@@ -9,10 +9,10 @@ Ce projet consiste à convertir la maquette d'une agence de location saisonnièr
 
 ### Fonctionnalités
 
-- **Champ de Recherche :** Un champ permet la saisie d'une ville; la recherche est n'est pas fonctionnelle.
-- **Cartes :** Cliquables, sans liens actifs.
-- **Filtres :** Changent d'apparence au survol.
-- **Navigation :** Ancres vers la section "Hébergements" et "Activités".
+- Le champ de recherche permet la saisie d'une ville, bien que la fonction de recherche ne soit pas fonctionnelle.
+- Les cartes sont interactives mais elles ne redirigent pas vers d'autres pages.
+- Les filtres visuels changent d'apparence au survol.
+- Les sections "Hébergements" et "Activités" sont accessibles via des ancres de navigation.
 
 ### Spécification techniques
 

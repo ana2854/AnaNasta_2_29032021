@@ -1,8 +1,7 @@
 # Projet Reservia
 
-./maquettes/reservia-desktop.png
+![maquette version desktop](maquettes/reservia-desktop.png)
 
-./maquettes/reservia-mobile.png
 
 ### Description
 
